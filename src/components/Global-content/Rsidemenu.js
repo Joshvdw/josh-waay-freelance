@@ -26,28 +26,8 @@ export default function Rsidemenu() {
                             </a>
                         </li>
                         <li>
-                            <a className="scroll-to" href="#about"onClick={removeActive}>
-                                <i className="lar la-user"></i> <span>About</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a className="scroll-to" href="#resume"onClick={removeActive}>
-                                <i className="las la-briefcase"></i> <span>Resume</span>
-                            </a>
-                        </li>
-                        <li>
                             <a className="scroll-to" href="#services"onClick={removeActive}>
                                 <i className="las la-stream"></i> <span>Services</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a className="scroll-to" href="#skills"onClick={removeActive}>
-                                <i className="las la-shapes"></i> <span>Skills</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a className="scroll-to" href="#portfolio"onClick={removeActive}>
-                                <i className="las la-grip-vertical"></i> <span>Portfolios</span>
                             </a>
                         </li>
                         <li>
@@ -55,6 +35,28 @@ export default function Rsidemenu() {
                                 <i className="lar la-comment"></i> <span>Testimonial</span>
                             </a>
                         </li>
+                        <li>
+                            <a className="scroll-to" href="#portfolio"onClick={removeActive}>
+                                <i className="las la-grip-vertical"></i> <span>Portfolio</span>
+                            </a>
+                        </li>
+                        {/*<li>*/}
+                        {/*    <a className="scroll-to" href="#about"onClick={removeActive}>*/}
+                        {/*        <i className="lar la-user"></i> <span>About</span>*/}
+                        {/*    </a>*/}
+                        {/*</li>*/}
+                        {/*<li>*/}
+                        {/*    <a className="scroll-to" href="#resume"onClick={removeActive}>*/}
+                        {/*        <i className="las la-briefcase"></i> <span>Resume</span>*/}
+                        {/*    </a>*/}
+                        {/*</li>*/}
+
+                        {/*<li>*/}
+                        {/*    <a className="scroll-to" href="#skills"onClick={removeActive}>*/}
+                        {/*        <i className="las la-shapes"></i> <span>Skills</span>*/}
+                        {/*    </a>*/}
+                        {/*</li>*/}
+
                         <li>
                             <a className="scroll-to" href="#contact"onClick={removeActive}>
                                 <i className="las la-envelope"></i> <span>Contact</span>

@@ -31,7 +31,9 @@
 
 */
 :root {
-  --primary_color: #28e98c;
+  --primary_color: rgba(160, 23, 3, 1);
+  --primary_color-dull: rgba(160, 23, 3, 0.7);
+  --bg_color: #171717;
 }
 *,*::before,*::after {
   margin: 0;
@@ -44,14 +46,46 @@ body {
   font-size: 16px;
   scroll-behavior: smooth;
   color: #999999;
-  background: #1f1f1f;
+  background: var(--bg_color);
   line-height: 1.7;
   overflow-x: hidden;
   height: 100vh;
+
 }
+
+.bg-texture {
+  /*background-image: url("mohammad-alizade-XgeZu2jBaVI-unsplash.jpg");*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  mixed-blend-mode: overlay;
+  position: fixed;
+  height: 100svh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.08;
+  top: 0;
+  left: 0;
+}
+.static-noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url('static.gif');
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 0.5; /* Adjust for intensity */
+  mix-blend-mode: overlay; /* Try multiply, soft-light too */
+}
+
 .bg-white {
   background: #fff;
 }
+
 img {
   max-width: 100%;
 }
@@ -66,15 +100,61 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+/* Targets the entire scrollbar */
+::-webkit-scrollbar {
+  width: 0.25vw;              /* vertical scrollbar width */
+  /*height: 8px;             !* horizontal scrollbar height *!*/
+}
+
+/* The track (background) */
+::-webkit-scrollbar-track {
+  background: var(--bg_color);
+}
+
+/* The thumb (scroll indicator) */
+::-webkit-scrollbar-thumb {
+  background: rgba(96, 15, 2, 0.7);
+}
+
+/* On hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #A01703;
+}
+
+.portfolio-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  /*border-radius: 15px;*/
+  overflow: hidden; /* Important to crop anything spilling out */
+}
+
+.portfolio-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill the frame while maintaining aspect ratio */
+}
+
+
+.facts-text {
+  font-size: 54px!important;
+}
+
 .content-width {
   max-width: 770px;
   width: 100%;
   margin-left: auto;
 }
 .theme-btn {
-  background: var(--primary_color);
-  color: #000000;
+  background: var(--primary_color-dull);
+  color: #FFFFFF;
   display: block;
+  font-weight: 600;
   text-align: center;
   padding: 11px 58px 10px 58px;
   display: inline-flex;
@@ -85,7 +165,7 @@ ul {
   border: none;
   transition: .3s;
   cursor: pointer;
-  border: 2px solid var(--primary_color);
+  border: 1px solid  var(--bg_color);
 }
 .theme-btn i {
   font-size: 24px;
@@ -96,6 +176,8 @@ ul {
 .theme-btn:hover {
   background: none;
   color: var(--primary_color);
+  border: 1px solid var(--primary_color);
+
 }
 .custom-container {
   max-width: 1130px;
@@ -150,6 +232,10 @@ ul {
   background-color: #fff;
   transform-origin: 50%;
   animation: bounceLoader 500ms alternate infinite ease;
+}
+
+.email {
+  color: var(--primary_color);
 }
 
 
@@ -221,7 +307,7 @@ main.drake-main {
   text-align: center;
   gap: 20px;
   padding: 24px 0;
-  background: #1f1f1f;
+  background: #191919;
   z-index: 20;
 }
 .menu li .scroll-to,
@@ -671,6 +757,7 @@ main.drake-main {
   transform: translateY(-50%);
   padding: 50px;
   z-index: 10;
+  background: #191919;
 }
 .drake-main .left-sidebar {
   display: none;
@@ -719,6 +806,7 @@ main.drake-main {
   color: #999999;
   font-size: 20px;
   transition: .3s;
+  background: var(--bg_color)
 }
 .left-sidebar .social-profile li a:hover {
   color: var(--primary_color);
@@ -753,10 +841,11 @@ main.drake-main {
 .hero-section .hero-content > p {
   max-width: 480px;
   margin-bottom: 31px;
+  font-size: 18px;
 }
 .hero-section .hero-content .go-to-project-btn {
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -766,10 +855,12 @@ main.drake-main {
   position: relative;
   overflow: hidden;
   margin-right: 15px;
+  background:#191919;
 }
 .hero-section .hero-content .go-to-project-btn img {
   display: block;
   animation: rotating 6s infinite linear;
+  width: 80%;
 }
 .hero-section .hero-content .go-to-project-btn i {
   position: absolute;
@@ -777,6 +868,12 @@ main.drake-main {
   font-size: 40px;
   display: block;
 }
+
+.go-to-project-btn {
+  width: 125px;
+  height: 125px;
+}
+
 .hero-section .hero-content .facts {
   gap: 100px;
   margin-top: 55px;
@@ -785,12 +882,31 @@ main.drake-main {
   font-size: 72px;
   color: var(--primary_color);
   line-height: 56px;
-  margin-bottom: 38px;
+  margin-bottom: 18px;
 }
 .hero-section .hero-content .facts p {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.facts div {
+  max-width: 180px;
+}
+
+.hero-section {
+  height: 100svh;
+  padding: 0;
+}
+
+.hero-content {
+  margin-top: 7rem;
+}
+.logo-home {
+  position: fixed;
+  top: 60px;
+  right: 68px;
+  width: 55px;
 }
 
 /* 08 - Home 3 */
@@ -935,15 +1051,16 @@ body .body-overlay {
   transition: .3s;
   position: relative;
   padding: 44px 48px 41px 48px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  background: #191919;
 }
 .services-items .service-item:last-child {
   margin-bottom: 0;
 }
 .services-items .service-item h2 {
-  font-size: 24px;
-  font-weight: 300;
-  margin-bottom: 8px;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 12px;
   color: #fff;
 }
 .services-items .service-item h2 a {
@@ -951,31 +1068,36 @@ body .body-overlay {
   transition: .3s;
 }
 .services-items .service-item:hover {
-  border-color: var(--primary_color);
+  /*border-color: var(--primary_color);*/
 }
 .services-items .service-item:hover h2 a {
-  color: var(--primary_color);
+  /*color: var(--primary_color);*/
 }
 .services-items .service-item p {
   font-size: 14px;
   color: #999999;
   margin-bottom: 30px;
+  font-size: 18px;
+  max-width: 70%;
+
 }
 .services-items .service-item .projects {
   font-size: 12px;
   color: #fff;
   text-transform: uppercase;
   display: inline-block;
+  max-width: 60%;
 }
 .services-items .service-item:hover .projects {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 .services-items .service-item i {
-  position: absolute;
-  font-size: 30px;
-  color: var(--primary_color);
+  /*position: absolute;*/
+  font-size: 40px;
+  color: var(--primary_color-dull);
   top: 45px;
   right: 50px;
+  margin-bottom: 16px;
 }
 
 
@@ -1028,14 +1150,14 @@ body .body-overlay {
   margin-bottom: 0;
 }
 .portfolio-items .portfolio-item .portfolio-item-inner {
-  height: 370px;
+  /*height: 370px;*/
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 15px;
   position: relative;
   margin-bottom: 30px;
 }
 .portfolio-items .portfolio-item.portfolio-full .portfolio-item-inner {
-  height: 410px;
+  /*height: 410px;*/
 }
 .portfolio-items .portfolio-item .portfolio-item-inner img {
   display: block;
@@ -1087,11 +1209,16 @@ body .body-overlay {
 .testimonial-item .testimonial-item-inner {
   border: 2px solid #565656;
   border-radius: 30px;
-  padding: 50px 50px 43px 50px;
+  padding: 50px;
+  background: #191919;
+  min-height: 433px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .testimonial-item .testimonial-item-inner .author {
   gap: 16px;
-  margin-bottom: 45px;
+  /*margin-bottom: 45px;*/
 }
 .testimonial-item .testimonial-item-inner .author img {
   width: 45px;
@@ -1115,11 +1242,11 @@ body .body-overlay {
   color: var(--primary_color);
 }
 .testimonial-item .testimonial-item-inner > p {
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   font-weight: 300;
-  line-height: 36px;
-  margin-bottom: 27px;
+  line-height: 28px;
+  margin-bottom: 32px;
 }
 .testimonial-item .testimonial-item-inner .project-btn {
   font-size: 12px;
@@ -1138,7 +1265,7 @@ body .body-overlay {
   width: 45px;
   height: 45px;
   display: block;
-  background: none;
+  background: #191919;
   border-radius: 50%;
   text-align: center;
   border: 2px solid #565656;
@@ -1263,7 +1390,7 @@ body .body-overlay {
 
 /* 18 - Contact */
 .contact-area {
-  padding-bottom: 50px;
+  padding-bottom: 7.5vw;
 }
 .contact-area .contact-content h3 {
   font-size: 24px;
@@ -1288,7 +1415,7 @@ body .body-overlay {
   font-size: 12px;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 2px;
+  margin-bottom: 6px;
 }
 .contact-area .contact-content .contact-form .input-group label sup {
   color: #fc4545;
@@ -1303,7 +1430,7 @@ body .body-overlay {
 .contact-area .contact-content .contact-form .input-group textarea,
 .contact-area .contact-content .contact-form .input-group input {
   display: block;
-  color: #666666;
+  color: #b1b1b1;
   width: 100%;
   border: none;
   background: none;
@@ -1358,8 +1485,30 @@ body .body-overlay {
   margin-bottom: 0;
   margin-top: 18px;
 }
+.customInput {
+  background-color: #191919 !important;
+  padding: 0.5rem 1rem!important;
+}
 
+/*.submit-msg {*/
+/*  color: green;*/
+/*}*/
 
+.green {
+  color: green;
+}
+
+.red {
+  color: var(--primary_color);
+}
+
+.white {
+  color: #fff;
+}
+.white:hover {
+  color: white;
+  font-weight: 500;
+}
 
 /* 19 - Breadcrumb */
 .breadcrumb-area {
@@ -1952,7 +2101,10 @@ body .body-overlay {
   font-size: 15px;
 }
 
-
+.menu {
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 
 /* @Keyframe */

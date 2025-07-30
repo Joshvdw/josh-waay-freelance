@@ -4,7 +4,7 @@ import Pageloader from './Global-content/Pageloader'
 import Rsidemenu from './Global-content/Rsidemenu'
 import Scrollnav from './Global-content/Scrollnav'
 import Lsb from './Global-content/Lsb'
-import Settings from './Global-content/Settings'
+// import Settings from './Global-content/Settings'
 import MainWrapper from './MainWrapper'
 
 
@@ -16,17 +16,19 @@ export default function Global(){
     }
     return (
       <div>
-        <Video video={currentVideo}/>
-      {/* <Pageloader/> */} 
+        {/*<Video video={currentVideo}/>*/}
+       {/*<Pageloader/>*/}
 
         {/* Settings icon */}
-        <Settings clickEvent={changeVideo} />
-
+        {/*<Settings clickEvent={changeVideo} />*/}
+          <div className="static-noise"></div>
+          <div className="bg-texture"></div>
+          <img src="./assets/images/jw-logo.png" alt="Logo" className="logo-home"/>
         {/* Left Side Bar and it will get executed on large devices*/}
         <Lsb/>
 
         {/*when user interacts with the hamburger menu it display the inner-components*/}
-        <Rsidemenu/>
+        {/*<Rsidemenu/>*/}
 
         {/*fixed on large screens easy to navigate through section og main components*/}
         <Scrollnav/>

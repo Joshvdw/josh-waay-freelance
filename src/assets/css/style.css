@@ -73,7 +73,7 @@ ul {
 }
 .theme-btn {
     background: var(--primary_color);
-    color: #000000;
+    color: #ffffff!important;
     display: block;
     text-align: center;
     padding: 11px 58px 10px 58px;
@@ -96,6 +96,9 @@ ul {
 .theme-btn:hover {
     background: none;
     color: var(--primary_color);
+}
+.force-white {
+    color: #ffffff!important;
 }
 .custom-container {
     max-width: 1130px;

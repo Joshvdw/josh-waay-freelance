@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import OwlCaraousel from 'react-owl-carousel'
 import 'owl.carousel/dist/assets/owl.carousel.min.css'
 import 'owl.carousel/dist/assets/owl.theme.default.min.css'
@@ -6,8 +6,9 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 export default function Testimonials() {
-    
+
     const carouselRef = useRef(null);
+    const [activeIndex, setActiveIndex] = useState(1);
 
     useEffect(() => {
         AOS.init({duration:1000})
@@ -15,12 +16,14 @@ export default function Testimonials() {
 
     const handlePrevClick = () => {
         carouselRef.current.prev();
+        setActiveIndex(activeIndex - 1) > 0 ? setActiveIndex(activeIndex - 1) : setActiveIndex(3);
     }
 
     const handleNextClick = () => {
         carouselRef.current.next();
+        setActiveIndex(activeIndex + 1) < 3 ? setActiveIndex(activeIndex + 1) : setActiveIndex(1);
     }
-  
+
   return (
     <section className="testimonial-area page-section scroll-to-page" id="testimonial">
             {/* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> */}
@@ -31,69 +34,69 @@ export default function Testimonials() {
             <div className="custom-container">
                 <div className="testimonial-content content-width">
                     <div className="section-header">
-                        <h4 className="subtitle scroll-animation" data-aos='fade-up'>
-                            <i className="lar la-comment"></i> testimonial
-                        </h4>
-                        <h1 className="scroll-animation" data-aos='fade-up'>Trusted by <span>Hundered Clients</span></h1>
-                    </div>    
+                        {/*<h4 className="subtitle scroll-animation" data-aos='fade-up'>*/}
+                        {/*    <i className="lar la-comment"></i> testimonials*/}
+                        {/*</h4>*/}
+                        <h1 className="scroll-animation" data-aos='fade-up'>Trusted by <span>Clients Globally</span></h1>
+                    </div>
                     <div className="testimonial-slider-wrap scroll-animation" data-aos='fade-up'>
 
                         <OwlCaraousel className="owl-carousel testimonial-slider owl-theme" smartSpeed="450" items="1" dots={false} ref={carouselRef}>
                             <div className="testimonial-item">
                                 <div className="testimonial-item-inner">
+                                    <p>Josh is a highly skilled developer with particular strength in custom JavaScript,
+                                        which we’ve utilised time and time again across numerous Webflow projects here
+                                        at the studio. His ability to craft bespoke interactions and solve complex problems
+                                        with lightweight code has been instrumental in delivering standout work for our
+                                        clients. Beyond this, he's built sophisticated experiences using React and WebGL,
+                                        demonstrating both technical range and a true eye for web-based storytelling.
+                                        From project inception and scoping, to architecture through to execution, his
+                                        consultancy, foresight and ability to evolve and adapt has consistently led to the
+                                        creation of quality work.</p>
                                     <div className="author d-flex align-items-center">
-                                        <img src="../assets/images/testimonial-1.jpg" alt="portfolio"/>
+                                        <img src="../assets/images/luca.jpeg" alt="portfolio"/>
                                         <div className="right">
-                                            <h3>Paublo Dybala</h3>
-                                            <p className="designation">CEO of <span>IBM Global</span></p>
+                                            <h3>Daniel Luca</h3>
+                                            <p className="designation"><span>Psychoactive Studios</span></p>
                                         </div>
                                     </div>
-                                    <p>“Drake - A Developer with the creativity, professional and 
-                                        master of code. Much more than what i'm expect. 
-                                        High quality product & flexiable price. Recommended!.”</p>
-
-                                    <a href="" className="project-btn">Project</a>
+                                    {/*<a href="" className="project-btn">Project</a>*/}
                                 </div>
                             </div>
 
                             <div className="testimonial-item">
                                 <div className="testimonial-item-inner">
+                                    <p>I have no hesitation in describing Josh as an “all-round star player.” He has demonstrated
+                                        himself to be a deep-thinker who can rise to any new occasion or challenge. Whether it be Webflow, WebGL, React, Blender or Unity — you name it, Josh has that rare ability to learn new programming languages or tools with ease. I would describe him as an independent learner who can lead his own projects and the people around him. The exact type of thinker you need for Innovation to occur.</p>
                                     <div className="author d-flex align-items-center">
-                                        <img src="../assets/images/testimonial-2.jpg" alt="portfolio"/>
+                                        <img src="../assets/images/maria.jpeg" alt="portfolio"/>
                                         <div className="right">
-                                            <h3>Christina Morillo</h3>
-                                            <p className="designation">Product Management of <span>Invision App Inc</span></p>
+                                            <h3>Maria Rose</h3>
+                                            <p className="designation"><span>ULTRAVIOLET</span></p>
                                         </div>
                                     </div>
-                                    <p>“Drake was a real pleasure to work with and we look 
-                                        forward to working with him again. He's definitely the kind of 
-                                        designer that you can trust with any project from A-Z.”</p>
-
-                                    <a href="" className="project-btn">Project</a>
+                                    {/*<a href="" className="project-btn">Project</a>*/}
                                 </div>
                             </div>
 
                             <div className="testimonial-item">
                                 <div className="testimonial-item-inner">
+                                    <p>We wanted a website that was both simple and stand-out, and to give viewers a small taste of our current video game project right there in the browser. Josh took our original concept and fed back into it with many great ideas and improvements, and was able to pull off a performant website that accurately matched the animation and interactivity of the game. Josh makes custom websites that clearly stand out from the crowd, which is exactly what we needed.</p>
                                     <div className="author d-flex align-items-center">
-                                        <img src="../assets/images/testimonial-3.jpg" alt="portfolio"/>
+                                        <img src="../assets/images/ben.jpeg" alt="portfolio"/>
                                         <div className="right">
-                                            <h3>Phil Foden</h3>
-                                            <p className="designation">Director of <span>Envato LLC</span></p>
+                                            <h3>Ben Childs</h3>
+                                            <p className="designation"><span>Cassbay Games</span></p>
                                         </div>
                                     </div>
-                                    <p>“Extremely profressional and fast service!. Drake is a master
-                                        of code and he also very creative. We done 3 projects with
-                                        him and certain will continue.”</p>
-
-                                    <a href="" className="project-btn">Project</a>
+                                    {/*<a href="" className="project-btn">Project</a>*/}
                                 </div>
                             </div>
                         </OwlCaraousel>
                         <div className="testimonial-footer-nav">
                             <div className="testimonial-nav d-flex align-items-center">
                                 <button className="prev" onClick={handlePrevClick} ><i className="las la-angle-left"></i></button>
-                                <div id="testimonial-slide-count"><span className="left">1</span> /3</div>
+                                <div id="testimonial-slide-count"><span className="left">{activeIndex}</span> /3</div>
                                 <button className="next" onClick={handleNextClick} ><i className="las la-angle-right"></i></button>
                             </div>
                         </div>

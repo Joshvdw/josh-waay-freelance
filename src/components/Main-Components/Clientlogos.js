@@ -11,7 +11,10 @@ export default function Clientlogos() {
         <div className="custom-container">
             <div className="services-content content-width">
                 <div class="clients-logos">
-                    <h4 class="scroll-animation" data-aos='fade-up'>work with 60+ brands worldwide</h4>
+                    <div className="section-header">
+                        <h1 className="scroll-animation" data-aos='fade-up'>You're in <span>Good Company</span></h1>
+                    </div>
+                    {/*<h4 class="scroll-animation" data-aos='fade-up'>work with 60+ brands worldwide</h4>*/}
                     <div class="row align-items-center">
                         <div class="col-md-3 scroll-animation" data-aos='fade-right'>
                             <img src="../assets/images/client-1.png" alt="Client"/>

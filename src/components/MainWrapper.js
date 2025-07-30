@@ -20,14 +20,14 @@ export default function Main() {
                 <Lsb/> {/* this component will used by mobile devices */}
 
                 <Herosec/>
-                <About/>
-                <Resume/>
                 <Service/>
-                <Skills/>
-                <Portfolio/>
                 <Testimonials/>
                 <Clientlogos/>
-                <Pricing/>
+                <Portfolio/>
+                {/*<About/>*/}
+                {/*<Resume/>*/}
+                {/*<Skills/>*/}
+                {/*<Pricing/>*/}
                 <Contact/>
                 
             </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const colorOptions = [
-  '#28e98c',
+  '#A01703',
   '#e4af12',
   '#fe6f1d',
   '#14c5fd',

@@ -12,7 +12,7 @@ export default function About() {
             <div className="about-content content-width">
                 <div className="section-header">
                     <h4 className="subtitle scroll-animation" data-aos='fade-up'>
-                        <i className="lar la-user"></i> About
+                        <i className="lar la-user"></i> Mission
                     </h4>
                     <h1 className="scroll-animation" data-aos='fade-up'>Every great design begin with<br/>
                         an even <span>better story</span></h1>

@@ -9,35 +9,36 @@ export default function Scrollnav() {
             </a>
         </li>
         <li>
-            <a className="scroll-to" href="#about">
-                <span>About</span> <i className="lar la-user"></i>
-            </a>
-        </li>
-        <li>
-            <a className="scroll-to" href="#resume">
-                <span>Resume</span> <i className="las la-briefcase"></i>
-            </a>
-        </li>
-        <li>
             <a className="scroll-to" href="#services">
                 <span>Services</span> <i className="las la-stream"></i>
             </a>
         </li>
         <li>
-            <a className="scroll-to" href="#skills">
-                <span>Skills</span> <i className="las la-shapes"></i>
+            <a className="scroll-to" href="#testimonial">
+                <span>Testimonials</span> <i className="lar la-comment"></i>
             </a>
         </li>
+        {/*<li>*/}
+        {/*    <a className="scroll-to" href="#resume">*/}
+        {/*        <span>Resume</span> <i className="las la-briefcase"></i>*/}
+        {/*    </a>*/}
+        {/*</li>*/}
+
+        {/*<li>*/}
+        {/*    <a className="scroll-to" href="#skills">*/}
+        {/*        <span>Skills</span> <i className="las la-shapes"></i>*/}
+        {/*    </a>*/}
+        {/*</li>*/}
         <li>
             <a className="scroll-to" href="#portfolio">
-                <span>Portfolios</span> <i className="las la-grip-vertical"></i>
+                <span>Portfolio</span> <i className="las la-grip-vertical"></i>
             </a>
         </li>
-        <li>
-            <a className="scroll-to" href="#testimonial">
-                <span>Testimonial</span> <i className="lar la-comment"></i>
-            </a>
-        </li>
+        {/*<li>*/}
+        {/*    <a className="scroll-to" href="#about">*/}
+        {/*        <span>Mission</span> <i className="lar la-user"></i>*/}
+        {/*    </a>*/}
+        {/*</li>*/}
         <li>
             <a className="scroll-to" href="#contact">
                 <span>Contact</span> <i className="las la-envelope"></i>
