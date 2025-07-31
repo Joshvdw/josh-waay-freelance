@@ -20,10 +20,13 @@ export default function Portfolio() {
         <div className="custom-container">
             <div className="portfolio-content content-width">
                 <div className="section-header">
-                    {/*<h4 className="subtitle scroll-animation" data-aos='fade-up'>*/}
-                    {/*    <i className="las la-grip-vertical"></i> portfolio*/}
-                    {/*</h4>*/}
-                    <h1 className="scroll-animation">View my <span>Projects</span></h1>
+                    <div className="new-header">
+                        <h1 className="scroll-animation">View my <span>Projects</span></h1>
+                        <h4 className="subtitle scroll-animation" data-aos='fade-up'>
+                            <i className="las la-grip-vertical"></i>portfolio
+                        </h4>
+                    </div>
+                    <img src="../assets/images/project-title_underline.png" alt="Client" className={"custom-line"}/>
                     {/*<p className="scroll-animation" data-aos='fade-up'>Crafting visually captivating and intuitive web solutions with creativity, innovation, and a passion for pixel perfection.</p>*/}
                 </div>
 

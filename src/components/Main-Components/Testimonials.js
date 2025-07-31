@@ -34,10 +34,13 @@ export default function Testimonials() {
             <div className="custom-container">
                 <div className="testimonial-content content-width">
                     <div className="section-header">
-                        {/*<h4 className="subtitle scroll-animation" data-aos='fade-up'>*/}
-                        {/*    <i className="lar la-comment"></i> testimonials*/}
-                        {/*</h4>*/}
-                        <h1 className="scroll-animation" data-aos='fade-up'>Trusted by <span>Clients Globally</span></h1>
+                        <div className="new-header">
+                            <h1 className="scroll-animation" data-aos='fade-up'>Trusted by <span>Clients Globally</span></h1>
+                            <h4 className="subtitle scroll-animation" data-aos='fade-up'>
+                                <i className="lar la-comment"></i> testimonials
+                            </h4>
+                        </div>
+                        <img src="../assets/images/project-title_underline.png" alt="Client" className={"custom-line"}/>
                     </div>
                     <div className="testimonial-slider-wrap scroll-animation" data-aos='fade-up'>
 

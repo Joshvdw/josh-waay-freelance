@@ -34,12 +34,15 @@ export default function Contact() {
         <div className="custom-container">
             <div className="contact-content content-width">
                 <div className="section-header">
-                    {/*<h4 className="subtitle scroll-animation" data-aos='fade-up'>*/}
-                    {/*    <i className="las la-envelope"></i> contact*/}
-                    {/*</h4>*/}
-                    <h1 className="scroll-animation" data-aos='fade-up'>Let's Work <span>Together</span></h1>
+                    <div className="new-header">
+                        <h1 className="scroll-animation" data-aos='fade-up'>Let's Work <span className={"bold"}>Together</span></h1>
+                        <h4 className="subtitle scroll-animation" data-aos='fade-up'>
+                            <i className="las la-envelope"></i>contact
+                        </h4>
+                    </div>
+                    <img src="../assets/images/project-title_underline.png" alt="Client" className={"custom-line"}/>
                 </div>
-                <br/><br/>
+                {/*<br/><br/>*/}
                 {/*<a href={"mailto:hello@joshwaay.dev"} target={"_blank"}>*/}
                 {/*    <h3 className="scroll-animation" data-aos='fade-up'>hello@joshwaay.dev</h3>*/}
                 {/*</a>*/}

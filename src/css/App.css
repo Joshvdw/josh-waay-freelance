@@ -186,21 +186,47 @@ ul {
 }
 .subtitle {
   font-size: 12px;
-  color: #ffffff;
+  color: #a5a5a5;
   text-transform: uppercase;
   font-weight: 300;
   margin: 0;
-  border: 1px solid #565656;
-  padding: 9px 20px;
-  border-radius: 30px;
-  margin-bottom: 53px;
+  /*border: 1px solid #565656;*/
+  /*padding: 9px 20px;*/
+  /*border-radius: 30px;*/
+  /*margin-bottom: 20px;*/
   display: inline-flex;
   align-items: center;
+  margin-bottom: 6px;
+  display: none;
 }
 .subtitle i {
   margin-bottom: 1px;
   font-size: 14px;
-  margin-right: 10px;
+  margin-right: 6px;
+}
+
+.line-break {
+  height: 1px;
+  width: 100%;
+  background: #565656;
+  opacity: 0.3;
+  margin-bottom: 42px;
+}
+
+.new-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.new-header h1 {
+  margin-bottom: 0;
+}
+
+.custom-line {
+  opacity: 0.8;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .page-loader {
@@ -738,7 +764,7 @@ main.drake-main {
   line-height: 60px;
   color: #fff;
   font-weight: 300;
-  margin-bottom: 33px;
+  /*margin-bottom: 33px;*/
 }
 .section-header h1 span {
   color: var(--primary_color);
@@ -1052,8 +1078,24 @@ body .body-overlay {
   position: relative;
   padding: 44px 48px 41px 48px;
   margin-bottom: 20px;
-  background: #191919;
+  /*background: #191919;*/
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.code {
+  background-image: url("code-bg.png");
+  background-position: left center;
+}
+.design {
+  background-image: url("design-bg.png");
+  background-position: left center;
+}
+.creative {
+  background-image: url("creative-bg.png");
+  background-position: left center;
+}
+
 .services-items .service-item:last-child {
   margin-bottom: 0;
 }
@@ -1077,7 +1119,7 @@ body .body-overlay {
   font-size: 14px;
   color: #999999;
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 16px;
   max-width: 70%;
 
 }
@@ -1298,7 +1340,13 @@ body .body-overlay {
   margin-bottom: 57px;
 }
 .clients-logos .col-md-3 {
-  margin-bottom: 74px;
+  /*margin-bottom: 74px;*/
+  min-height: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .clients-logos img {
   display: block;
@@ -1309,7 +1357,9 @@ body .body-overlay {
   opacity: 1;
 }
 
-
+.client-row {
+  --bs-gutter-x: 2.5rem;
+}
 
 /* 17 - Pricing Table */
 .pricing-area {
