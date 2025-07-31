@@ -26,8 +26,7 @@ export default function Portfolio() {
                             <i className="las la-grip-vertical"></i>portfolio
                         </h4>
                     </div>
-                    <img src="../assets/images/project-title_underline.png" alt="Client" className={"custom-line"}/>
-                    {/*<p className="scroll-animation" data-aos='fade-up'>Crafting visually captivating and intuitive web solutions with creativity, innovation, and a passion for pixel perfection.</p>*/}
+                    <img src="../assets/images/project-title_underline.png" alt="Client" className={"custom-line scroll-animation"} data-aos='fade-up'/>
                 </div>
 
                 <div className="row portfolio-items">

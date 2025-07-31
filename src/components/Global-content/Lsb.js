@@ -8,9 +8,16 @@ export default function Lsb() {
             {/*    /!*<span className="designation">Creative Fullstack Web Developer</span>*!/*/}
             {/*</div>*/}
             <img className="me" src="./assets/images/full-pic-red.png" alt="Me"/>
-            {/*<h2 className="email">hello@joshwaay.dev</h2>*/}
-            <h2 className="">Based in Amsterdam</h2>
-            <h2 className="address">Working globally</h2>
+            <div className="flex-lsb">
+                <img src="./assets/images/jw-logo.png" alt="Logo" className="logo-lsb" />
+                <div className="new-lsb">
+                    <h6 className="">Based in Amsterdam</h6>
+                    <h6 className="address">Working globally</h6>
+                </div>
+                {/*<h2 className="email">hello@joshwaay.dev</h2>*/}
+            </div>
+                {/*<h2 className="">Based in Amsterdam</h2>*/}
+                {/*<h2 className="address">Working globally</h2>*/}
             <ul className="social-profile d-flex align-items-center flex-wrap justify-content-center">
                 <li>
                     <a href="https://joshwaay.dev" target={"_blank"}><i className="las la-briefcase"></i></a>

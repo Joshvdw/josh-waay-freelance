@@ -19,13 +19,23 @@ export default function Contact() {
             if (res.ok) {
                 setStatus("success");
                 e.target.reset();
+                resetStatus();
             } else {
                 setStatus("error");
+                resetStatus();
             }
         } catch (err) {
             setStatus("error");
+            resetStatus();
         }
     };
+
+    const resetStatus = () => {
+        setTimeout(() => {
+            setStatus("")
+        }, 10000)
+    }
+
     useEffect(()=>{
         AOS.init({duration:1300})
     },[])
@@ -40,7 +50,7 @@ export default function Contact() {
                             <i className="las la-envelope"></i>contact
                         </h4>
                     </div>
-                    <img src="../assets/images/project-title_underline.png" alt="Client" className={"custom-line"}/>
+                    <img src="../assets/images/project-title_underline.png" alt="Client" className={"custom-line scroll-animation"} data-aos='fade-up'/>
                 </div>
                 {/*<br/><br/>*/}
                 {/*<a href={"mailto:hello@joshwaay.dev"} target={"_blank"}>*/}

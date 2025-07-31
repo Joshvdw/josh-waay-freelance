@@ -86,27 +86,36 @@
 
     .services-items {
         display: flex;
+        flex-direction: column;
         gap: 15px;
     }
     .services-items .service-item {
         margin-bottom: 0;
         padding: 30px 30px 30px 30px;
-        width: 33.3333%;
+        /*width: 33.3333%;*/
+        width: 100%;
     }
     .services-items .service-item h2 {
-        font-size: 20px;
-        margin-bottom: 10px;
+        /*font-size: 20px;*/
+        /*margin-bottom: 10px;*/
     }
     .services-items .service-item p {
-        margin-bottom: 25px;
+        /*margin-bottom: 25px;*/
     }
     .services-items .service-item i {
-        font-size: 20px;
+        font-size: 32px;
         top: 25px;
         right: 20px;
     }
     .pricing-table-items .pricing-table .theme-btn {
         padding: 11px 40px 10px 40px;
+    }
+    .logo-home {
+        position: fixed;
+        top: 42px;
+        left: 42px;
+        width: 55px;
+        /*display: block;*/
     }
 }
 @media (max-width: 977px) {
@@ -244,10 +253,10 @@
         margin-right: 40px;
         margin-bottom: 20px;
     }
-    .services-items {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+    /*.services-items {*/
+    /*    display: grid;*/
+    /*    grid-template-columns: 1fr 1fr;*/
+    /*}*/
     .services-items .service-item {
         width: 100%;
     }
@@ -263,6 +272,9 @@
     }
     .footer-area .footer-widget-item {
         margin-bottom: 40px;
+    }
+    .col-md-3:last-child {
+        display: none!important;
     }
 }
 @media (max-width: 584px) {
@@ -326,6 +338,9 @@
     }
     .comments-area .comments .children {
         padding-left: 40px;
+    }
+    .col-md-3:last-child {
+        display: block!important;
     }
 }
 @media (max-width: 425px) {

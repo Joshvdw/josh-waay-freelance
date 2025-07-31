@@ -17,8 +17,7 @@ export default function Service() {
                             <i className="las la-stream"></i> Services
                         </h4>
                     </div>
-                    <img src="../assets/images/project-title_underline.png" alt="Client" className={"custom-line"}/>
-
+                    <img src="../assets/images/project-title_underline.png" alt="Client" className={"custom-line scroll-animation"} data-aos='fade-up'/>
                 </div>
 
                 <div className="services-items">

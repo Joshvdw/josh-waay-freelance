@@ -1,30 +1,37 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import OwlCaraousel from 'react-owl-carousel'
 import 'owl.carousel/dist/assets/owl.carousel.min.css'
 import 'owl.carousel/dist/assets/owl.theme.default.min.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import $ from 'jquery';
 
 export default function Testimonials() {
-
     const carouselRef = useRef(null);
-    const [activeIndex, setActiveIndex] = useState(1);
 
     useEffect(() => {
         AOS.init({duration:1000})
     }, [])
 
     const handlePrevClick = () => {
-        carouselRef.current.prev();
-        setActiveIndex(activeIndex - 1) > 0 ? setActiveIndex(activeIndex - 1) : setActiveIndex(3);
-    }
+        if (carouselRef.current) {
+            carouselRef.current.prev();
+        }
+    };
 
     const handleNextClick = () => {
-        carouselRef.current.next();
-        setActiveIndex(activeIndex + 1) < 3 ? setActiveIndex(activeIndex + 1) : setActiveIndex(1);
-    }
+        if (carouselRef.current) {
+            carouselRef.current.next();
+        }
+    };
 
-  return (
+    useEffect(() => {
+        const counterEl = document.querySelector("#testimonial-slide-count .left");
+        if (counterEl) {
+            counterEl.textContent = "1"; // initial slide number
+        }
+    }, []);
+    return (
     <section className="testimonial-area page-section scroll-to-page" id="testimonial">
             {/* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> */}
 
@@ -40,11 +47,21 @@ export default function Testimonials() {
                                 <i className="lar la-comment"></i> testimonials
                             </h4>
                         </div>
-                        <img src="../assets/images/project-title_underline.png" alt="Client" className={"custom-line"}/>
+                        <img src="../assets/images/project-title_underline.png" alt="Client" className={"custom-line scroll-animation"} data-aos='fade-up'/>
                     </div>
                     <div className="testimonial-slider-wrap scroll-animation" data-aos='fade-up'>
+                        <OwlCaraousel className="owl-carousel testimonial-slider owl-theme" smartSpeed="450" items="1" dots={false} ref={carouselRef} loop={true} margin={20}
+                              onChanged={(event) => {
+                                  const slideCount = event.item.count;
+                                  const clones = event.relatedTarget._clones.length;
+                                  const realIndex = (event.item.index - clones / 2 + slideCount) % slideCount + 1;
 
-                        <OwlCaraousel className="owl-carousel testimonial-slider owl-theme" smartSpeed="450" items="1" dots={false} ref={carouselRef}>
+                                  const counterEl = document.querySelector("#testimonial-slide-count .left");
+                                  if (counterEl) {
+                                      counterEl.textContent = realIndex;
+                                  }
+                              }}
+                        >
                             <div className="testimonial-item">
                                 <div className="testimonial-item-inner">
                                     <p>Josh is a highly skilled developer with particular strength in custom JavaScript,
@@ -99,7 +116,7 @@ export default function Testimonials() {
                         <div className="testimonial-footer-nav">
                             <div className="testimonial-nav d-flex align-items-center">
                                 <button className="prev" onClick={handlePrevClick} ><i className="las la-angle-left"></i></button>
-                                <div id="testimonial-slide-count"><span className="left">{activeIndex}</span> /3</div>
+                                <div id="testimonial-slide-count"><span className="left"></span> /3</div>
                                 <button className="next" onClick={handleNextClick} ><i className="las la-angle-right"></i></button>
                             </div>
                         </div>
