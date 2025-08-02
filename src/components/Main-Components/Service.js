@@ -29,7 +29,7 @@ export default function Service() {
                     </div>
                     <div className="service-item scroll-animation code" data-aos='fade-up'>
                         <i className="las la-code"></i>
-                        <h2>Fullstack Web Development</h2>
+                        <h2>Fullstack Development</h2>
                         <p>Our websites are built for performance, with fast load times that enhance both user experience and SEO. They offer improved security by eliminating always-on servers, reducing potential vulnerabilities. Scalability is seamless, handling traffic spikes without the need for expensive infrastructure. With intuitive content editing tools, non-technical team members can make updates easily. Plus, they’re more cost-efficient to host and maintain than traditional websites.
                         </p>
                         <span className="projects">React | Nextjs | Vercel | typescript | sanity | supabase <br/> Shopify  | APIs | SEO | Analytics | Git | webflow | Wordpress</span>

@@ -44,9 +44,12 @@
     .content-width {
         max-width: 100%;
     }
-    .section-header h1 br {
-        display: none;
-    }
+    /*.section-header h1 {*/
+    /*   max-width: 43rem;*/
+    /*}*/
+    /*.section-header h1 br {*/
+    /*    display: none;*/
+    /*}*/
     .left-sidebar {
         position: relative;
         max-width: 767px;
@@ -341,6 +344,10 @@
     }
     .col-md-3:last-child {
         display: block!important;
+    }
+    .icon-menu {
+        right: 1rem;
+        top: 1rem;
     }
 }
 @media (max-width: 425px) {

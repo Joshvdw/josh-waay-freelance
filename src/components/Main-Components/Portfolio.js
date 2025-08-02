@@ -1,20 +1,21 @@
 import React,{useEffect} from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import Lightbox from 'lightbox2';
-import 'lightbox2/dist/css/lightbox.min.css';
+// import AOS from 'aos'
+// import 'aos/dist/aos.css'
+// import Lightbox from 'lightbox2';
+// import 'lightbox2/dist/css/lightbox.min.css';
+import PortfolioLink from "./PortfolioLink";
 // import 'lightbox2/dist/js/lightbox.js';
 
 export default function Portfolio() {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-        Lightbox.option({
-          resizeDuration: 200,
-          fadeDuration: 600,
-          imageFadeDuration: 600,
-          wrapAround: true
-        });
-      }, []);
+    // useEffect(() => {
+    //     AOS.init({ duration: 1000 });
+    //     Lightbox.option({
+    //       resizeDuration: 200,
+    //       fadeDuration: 600,
+    //       imageFadeDuration: 600,
+    //       wrapAround: true
+    //     });
+    //   }, []);
   return (
     <section className="portfolio-area page-section scroll-to-page" id="portfolio">
         <div className="custom-container">
@@ -33,14 +34,7 @@ export default function Portfolio() {
                     <div className="col-md-12 scroll-animation" data-aos='fade-up'>
                         <div className="portfolio-item portfolio-full">
                             <div className="portfolio-item-inner">
-                                <a href="https://joshwaay.dev" target={"_blank"} >
-                                    {/*<img src="../assets/images/openGraphPreview.webp" alt="Portfolio link"/>*/}
-                                    <video autoPlay muted loop playsInline className="portfolio-video" >
-                                        <source src="../assets/videos/portfolio-preview.mp4" type="video/mp4"/>
-                                        Your browser does not support the video tag.
-                                    </video>
-
-                                </a>
+                                <PortfolioLink />
 
                                 {/*<ul className="portfolio-categories">*/}
                                 {/*    <li>*/}

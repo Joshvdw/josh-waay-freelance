@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Video from './Global-content/Video'
-import Pageloader from './Global-content/Pageloader'
+// import Video from './Global-content/Video'
+// import Pageloader from './Global-content/Pageloader'
 import Rsidemenu from './Global-content/Rsidemenu'
 import Scrollnav from './Global-content/Scrollnav'
 import Lsb from './Global-content/Lsb'

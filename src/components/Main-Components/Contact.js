@@ -126,7 +126,6 @@ export default function Contact() {
                         </div>
                     </div>
                 </form>
-
             </div>
         </div>
     </section>

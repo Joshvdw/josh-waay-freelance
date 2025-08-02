@@ -67,16 +67,16 @@ export default function Rsidemenu() {
 
 
                 <div className="sidebar-social">
-                    <p>Social</p>
+                    <p>Links</p>
                     <ul className="social-links d-flex align-items-center">
                         <li>
-                            <a href="https://twitter.com"><i className="lab la-twitter"></i></a>
+                            <a href="https://joshwaay.dev" target={"_blank"}><i className="las la-briefcase"></i></a>
                         </li>
                         <li>
-                            <a href="https://dribble.com"><i className="lab la-dribbble"></i></a>
+                            <a href="https://github.com/Joshvdw" target={"_blank"}><i className="lab la-github"></i></a>
                         </li>
                         <li>
-                            <a href="https://instagram.com"><i className="lab la-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/jvdwaay/" target={"_blank"}><i className="lab la-linkedin-in"></i></a>
                         </li>
                     </ul>
                 </div>

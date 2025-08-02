@@ -31,7 +31,7 @@ export default function Lsb() {
             </ul>
             {/*<p className="copyright">&copy; 2025 All Rights Reserved</p>*/}
             <p className="copyright">hello@joshwaay.dev</p>
-            <a href="mailto" className="theme-btn">
+            <a href="#contact" className="theme-btn">
                 <i className="las la-envelope"></i> Let’s Chat
             </a>
         </div>
