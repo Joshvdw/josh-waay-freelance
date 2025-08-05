@@ -38,7 +38,7 @@ export default function Testimonials() {
             {/* <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script> */}
 
 
-            <div className="custom-container">
+            <div className="custom-container full-height-container">
                 <div className="testimonial-content content-width">
                     <div className="section-header">
                         <div className="new-header">

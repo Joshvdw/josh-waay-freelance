@@ -7,8 +7,8 @@ export default function Clientlogos() {
         AOS.init({duration:1000})
     },[])
   return (
-    <section>
-        <div className="custom-container">
+    <section id={"clients"}>
+        <div className="custom-container full-height-container">
             <div className="services-content content-width">
                 <div class="clients-logos">
                     <div className="section-header">

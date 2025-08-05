@@ -15,9 +15,12 @@ export default function Herosec() {
                         {/*<h4 className="subtitle scroll-animation" data-animation="fade_from_bottom" data-aos='fade-up'>*/}
                         {/*    <i className="las la-home"></i> Introduction*/}
                         {/*</h4>*/}
-                        <h1 className="scroll-animation" data-aos='fade-up'>Hi I'm <span>Josh Waay</span>,
-                            <br/>a creative fullstack web developer</h1>
+                        {/*<h1 className="scroll-animation" data-aos='fade-up'>Hi I'm <span>Josh Waay</span>,*/}
+                        {/*    <br/>a creative fullstack web developer</h1>*/}
+                        <h1 className="scroll-animation" data-aos='fade-up'>I help businesses turn websites into <span>modern experiences</span>
+                            </h1>
                     </div>
+
                     <p className="scroll-animation" data-aos='fade-up'>Crafting visually captivating and intuitive web solutions with creativity, innovation, and a passion for pixel perfection.</p>
                     <div className="d-flex">
                         <div className="facts d-flex">

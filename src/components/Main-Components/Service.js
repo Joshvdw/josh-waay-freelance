@@ -28,19 +28,19 @@ export default function Service() {
                         <span className="projects">Figma | Adobe Suite | Lottie | AI Tools</span>
                     </div>
                     <div className="service-item scroll-animation code" data-aos='fade-up'>
-                        <i className="las la-code"></i>
+                        <i className="las la-code-branch"></i>
                         <h2>Fullstack Development</h2>
                         <p>Our websites are built for performance, with fast load times that enhance both user experience and SEO. They offer improved security by eliminating always-on servers, reducing potential vulnerabilities. Scalability is seamless, handling traffic spikes without the need for expensive infrastructure. With intuitive content editing tools, non-technical team members can make updates easily. Plus, they’re more cost-efficient to host and maintain than traditional websites.
                         </p>
                         <span className="projects">React | Nextjs | Vercel | typescript | sanity | supabase <br/> Shopify  | APIs | SEO | Analytics | Git | webflow | Wordpress</span>
                     </div>
                     <div className="service-item scroll-animation creative" data-aos='fade-up'>
-                        <i className="las la-bezier-curve"></i>
+                        <i className="lab la-codepen"></i>
                         <h2>Creative Development</h2>
                         <p>Looking to make a lasting impression? I specialise in crafting bespoke, experiential web experiences that push the boundaries of creativity and technology. Whether it's a microsite, digital installation, or an interactive brand story, I blend code, design, sound, and motion to deliver emotionally engaging and memorable experiences.</p>
                         <span className="projects">GSAP | Webgl | unity | C# | Sound design </span>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </section>

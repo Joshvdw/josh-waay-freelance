@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-// import Video from './Global-content/Video'
+import Video from './Global-content/Video'
 // import Pageloader from './Global-content/Pageloader'
 import Rsidemenu from './Global-content/Rsidemenu'
 import Scrollnav from './Global-content/Scrollnav'
@@ -9,12 +9,12 @@ import MainWrapper from './MainWrapper'
 import Lenis from 'lenis'
 
 export default function Global() {
-    const [currentVideo, setVideo] = useState('')
+    // const [currentVideo, setVideo] = useState('')
     const [showRsidemenu, setShowRsidemenu] = useState(window.innerWidth < 1220)
 
-    function changeVideo(videos) {
-        setVideo(videos)
-    }
+    // function changeVideo(videos) {
+    //     setVideo(videos)
+    // }
 
     useEffect(() => {
         // Lenis scroll setup
@@ -46,16 +46,18 @@ export default function Global() {
         }
     }, [])
 
+
+
     return (
         <div>
             {/* TEMPLATE EXTRAS */}
-            {/*<Video video={currentVideo} />*/}
+            <Video video={"/assets/videos/bg-video.mp4"} />
             {/*<Pageloader />*/}
             {/*<Settings clickEvent={changeVideo} />*/}
 
             <div className="static-noise"></div>
+            {/*<img src="./assets/images/jw-logo.png" alt="Logo" className="logo-home" />*/}
             <div className="bg-texture"></div>
-            <img src="./assets/images/jw-logo.png" alt="Logo" className="logo-home" />
             <Lsb />
 
             {/* Conditionally render Rsidemenu based on window size */}

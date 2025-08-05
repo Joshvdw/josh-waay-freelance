@@ -36,6 +36,11 @@ export default function Rsidemenu() {
                             </a>
                         </li>
                         <li>
+                            <a className="scroll-to" href="#clients" onClick={removeActive}>
+                                <i className="las la-user-friends"></i> <span>Clients</span>
+                            </a>
+                        </li>
+                        <li>
                             <a className="scroll-to" href="#portfolio"onClick={removeActive}>
                                 <i className="las la-grip-vertical"></i> <span>Portfolio</span>
                             </a>

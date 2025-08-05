@@ -1,8 +1,12 @@
-import React from 'react'
+import {useState, useEffect} from 'react';
 
 export default function Scrollnav() {
-  return (
-    <ul className="menu scroll-nav d-flex">
+    const [loaded, setLoaded] = useState(false);
+    useEffect(() => {
+        setLoaded(true);
+    })
+    return (
+    <ul className={`menu scroll-nav d-flex ${loaded ? 'loaded' : ''}`}>
         <li>
             <a className="scroll-to" href="#home">
                 <span>Home</span> <i className="las la-home"></i>
@@ -16,6 +20,11 @@ export default function Scrollnav() {
         <li>
             <a className="scroll-to" href="#testimonial">
                 <span>Testimonials</span> <i className="lar la-comment"></i>
+            </a>
+        </li>
+        <li>
+            <a className="scroll-to" href="#clients">
+                <span>Clients</span> <i className="las la-user-friends"></i>
             </a>
         </li>
         {/*<li>*/}

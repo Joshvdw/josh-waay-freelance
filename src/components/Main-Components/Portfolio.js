@@ -18,7 +18,7 @@ export default function Portfolio() {
     //   }, []);
   return (
     <section className="portfolio-area page-section scroll-to-page" id="portfolio">
-        <div className="custom-container">
+        <div className="custom-container full-height-container">
             <div className="portfolio-content content-width">
                 <div className="section-header">
                     <div className="new-header">

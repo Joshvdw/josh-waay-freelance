@@ -41,7 +41,7 @@ export default function Contact() {
     },[])
   return (
     <section className="contact-area page-section scroll-content" id="contact">
-        <div className="custom-container">
+        <div className="custom-container full-height-container">
             <div className="contact-content content-width">
                 <div className="section-header">
                     <div className="new-header">
