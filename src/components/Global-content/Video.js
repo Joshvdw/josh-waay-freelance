@@ -1,31 +1,41 @@
-import React, { Component } from "react";
+import React, { useEffect, useRef } from "react";
 
-export class Video extends Component {
-  componentDidUpdate(prevProps) {
-    if (this.props.video !== prevProps.video) {
-      this.videoRef.src = this.props.video;
+const Video = ({ video }) => {
+  const videoRef = useRef(null);
+  const wrapperRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.src = video;
     }
-  }
+  }, [video]);
 
-  render() {
-    return (
-      <div className="videoWrapper">
-        <video
-          className="body-overlay"
-          muted
-          autoPlay
-          loop
-          style={{ opacity: 0.1 }}
-          ref={(ref) => (this.videoRef = ref)}
-          playsInline
-          preload="auto"
-        >
-          <source src={this.props.video} type="video/mp4" />
-        </video>
-        {/*<p>View my projects</p>*/}
-      </div>
-    );
-  }
-}
+  const handleLoadedData = () => {
+    if (wrapperRef.current) {
+      wrapperRef.current.classList.add("loaded");
+    }
+    if (videoRef.current) {
+      videoRef.current.classList.add("loaded");
+    }
+  };
+
+  return (
+    <div className="videoWrapper" ref={wrapperRef}>
+      <video
+        className="body-overlay"
+        muted
+        autoPlay
+        loop
+        style={{ opacity: 0.1 }}
+        ref={videoRef}
+        playsInline
+        preload="auto"
+        onLoadedData={handleLoadedData}
+      >
+        <source src={video} type="video/mp4" />
+      </video>
+    </div>
+  );
+};
 
 export default Video;
