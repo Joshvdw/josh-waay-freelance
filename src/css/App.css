@@ -1216,7 +1216,7 @@ main.drake-main {
   gap: 100px;
   margin-top: 55px;
 }
-.hero-section .hero-content .facts h1 {
+.hero-section .hero-content .facts h2 {
   font-size: 72px;
   font-family: var(--tech_font);
   color: var(--accent_color);
@@ -1786,6 +1786,10 @@ body .body-overlay.loaded {
 
 .client-row {
   --bs-gutter-x: 2.5rem;
+}
+
+#clients {
+  overflow: hidden;
 }
 
 /* 17 - Pricing Table */

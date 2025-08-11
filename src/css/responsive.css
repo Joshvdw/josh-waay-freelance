@@ -69,14 +69,20 @@
   ::-webkit-scrollbar {
     width: 0.5rem; /* vertical scrollbar width */
   }
-  .left-sidebar {
+  /* .lsb-outer {
     display: none;
-  }
+  } */
   .left-sidebar h2 {
     font-size: 64px;
   }
+  .lsb-outer {
+    padding: 40px 0;
+  }
+  .custom-container {
+    min-height: unset !important;
+  }
   .services-area {
-    padding-top: 150px;
+    /* padding-top: 150px; */
   }
   /* .testimonial-area
     .testimonial-slider-wrap
@@ -213,6 +219,18 @@
 }
 
 @media (max-width: 767px) {
+  .code {
+    background-image: url("code-bg-mobile.webp");
+    background-position: right top;
+  }
+  .design {
+    background-position: right top;
+    background-image: url("design-bg-mobile.webp");
+  }
+  .creative {
+    background-position: right top;
+    background-image: url("creative-bg-mobile.webp");
+  }
   .clients-logos .col-md-3 {
     min-height: auto;
     height: 9rem;
@@ -230,8 +248,8 @@
   .hero-section .hero-content h1 span {
     font-weight: 600 !important;
   }
-  .hero-section .hero-content .facts h1 {
-    font-size: 52px;
+  .hero-section .hero-content .facts h2 {
+    font-size: 52px !important;
   }
   .icon-menu {
     right: 30px;
@@ -448,6 +466,7 @@
   }
   .services-items .service-item .projects {
     font-weight: 700;
+    font-size: 1.7vw;
   }
   .services-items .service-item {
     min-height: 550px;
@@ -496,6 +515,13 @@
   .facts div {
     max-width: 150px;
   }
+  .services-items .service-item .projects {
+    font-size: 10px;
+  }
+  .services-items .service-item .projects br {
+    display: none;
+  }
+
   .hero-section .hero-content .facts p {
     font-size: 12px;
   }
@@ -516,9 +542,8 @@
   .hero-section .hero-content h1 {
     font-size: 50px;
   }
-  .hero-section .hero-content .facts h1 {
-    font-size: 48px;
-    margin-bottom: 25px;
+  .hero-section .hero-content .facts h2 {
+    font-size: 10vw !important;
   }
   /*.hero-section .hero-content .facts p br {*/
   /*    display: none;*/
@@ -619,7 +644,7 @@
 
   .left-sidebar img.me {
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
   }
 }
 @media (max-width: 425px) {
@@ -647,10 +672,14 @@
   }
   .hero-section .hero-content .facts {
     gap: 30px;
+    margin-top: 0;
   }
   .hero-section .hero-content .go-to-project-btn {
     position: absolute;
     right: 0;
+  }
+  .hero-section .hero-content .hero-container > p {
+    margin-bottom: 32px;
   }
   .hero-section .hero-content h1 {
     line-height: 1.1;

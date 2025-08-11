@@ -26,7 +26,7 @@ export default function Lsb() {
             {/*</div>*/}
             <p className="copyright">
               © Josh Waay Dev | Amsterdam, nl
-              <br /> KVK 8291029 | BTW NL003753059B76
+              <br /> KVK 218171821B01 | BTW NL005300610B56
             </p>
             <ul className="social-profile d-flex align-items-center flex-wrap justify-content-center">
               <li>

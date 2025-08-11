@@ -56,14 +56,13 @@ export default function Global() {
       <BlackOverlay />
       <div className="static-noise"></div>
       {/* <div className="bg-texture"></div> */}
-      <Lsb />
-
+      {!isMobile && <Lsb />}
       {/* Conditionally render Rsidemenu based on window size */}
       {isMobile && (
         <>
-          <div className="logo-home">
+          {/* <div className="logo-home">
             <img src="./assets/images/jw-logo.png" alt="Logo" />
-          </div>
+          </div> */}
           <Rsidemenu />
         </>
       )}
