@@ -30,14 +30,17 @@
 */
 
 :root {
-  --primary_color: rgba(160, 23, 3, 1);
+  --primary_color: #7e0818;
+  --primary_color-dull: #660713;
   --accent_color: #ff1030;
   --complimentary_color: #efd0a8;
-  --primary_color-dull: rgba(160, 23, 3, 0.7);
-  /* --primary_color-dull: rgba(255, 16, 48, 0.7); */
+  /* --primary_color: rgba(160, 23, 3, 1); */
+  /* --primary_color-dull: rgba(160, 23, 3, 0.7); */
+
   --bg_img: url("liquid-bg.jpeg");
   /* --bg_texture: url("bg-texture.jpeg"); */
   --silver_color: #c0c0c0;
+  --silver_dark: #999999;
   --bg_color: #0b0b0b;
   --container_color: #101010;
   --border_color: #373737;
@@ -82,7 +85,7 @@ body {
 
 #black-mobile-overlay {
   /*background-image: url("bg-gradient.webp");*/
-  background: rgb(188 74 74);
+  background: #b99096;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -110,7 +113,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   pointer-events: none;
   z-index: 9999;
   background-image: url("static.gif");
@@ -141,7 +144,7 @@ ul {
 
 /* Targets the entire scrollbar */
 ::-webkit-scrollbar {
-  width: 0.4vw; /* vertical scrollbar width */
+  width: 0.2vw; /* vertical scrollbar width */
 }
 
 /* The track (background) */
@@ -152,12 +155,12 @@ ul {
 /* The thumb (scroll indicator) */
 ::-webkit-scrollbar-thumb {
   /* background: rgb(115, 18, 3); */
-  background: var(--primary_color-dull);
+  background: var(--silver_dark);
 }
 
 /* On hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #851403;
+  background: var(--silver_color);
 }
 
 .videoWrapper {
@@ -287,7 +290,7 @@ ul {
 }
 .theme-btn:hover {
   color: #ffffff;
-  background: rgba(160, 23, 3, 0.8);
+  background: var(--primary_color);
   box-shadow: 0 0 30px 10px rgba(160, 23, 3, 0.4) !important; /* Red hex color */
 }
 
@@ -409,10 +412,10 @@ ul {
   transition: 0.3s;
 }
 .icon-menu:hover {
-  border-color: var(--primary_color);
+  border-color: var(--accent_color);
 }
 .icon-menu:hover span {
-  background: var(--primary_color);
+  background: var(--accent_color);
 }
 
 #scroll-section {
@@ -493,7 +496,7 @@ main.drake-main {
 .menu li a:hover,
 .menu li .scroll-to.active,
 .menu li .scroll-to:hover {
-  color: var(--primary_color);
+  color: var(--accent_color);
 }
 .menu li .scroll-to:hover span,
 .menu li a:hover span {
@@ -510,7 +513,7 @@ main.drake-main {
   position: absolute;
   transition: 0.3s;
   font-size: 12px;
-  background: var(--primary_color);
+  background: var(--accent_color);
   right: 100%;
   color: white;
   display: block;
@@ -524,7 +527,7 @@ main.drake-main {
   content: "";
   width: 10px;
   height: 10px;
-  background: var(--primary_color);
+  background: var(--accent_color);
   position: absolute;
   right: -3px;
   top: 50%;
@@ -642,7 +645,7 @@ main.drake-main {
   font-size: 20px;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .sidebar-social ul li a:hover {
-  color: var(--primary_color);
+  color: var(--accent_color);
 }
 
 .social-links {
@@ -957,7 +960,8 @@ main.drake-main {
   font-family: var(--tech_font);
 }
 .section-header h1 span {
-  color: var(--primary_color);
+  color: var(--accent_color);
+  opacity: 0.8;
   font-weight: 500;
 }
 
@@ -1004,6 +1008,7 @@ main.drake-main {
   border-radius: 15px;
   display: block;
   margin-bottom: 30px;
+  opacity: 0.8;
 }
 .left-sidebar.loaded {
   opacity: 1 !important;
@@ -1030,8 +1035,9 @@ main.drake-main {
 }
 .left-sidebar .address {
   margin-bottom: 15px;
-  color: var(--primary_color);
-  font-weight: 600;
+  color: var(--accent_color);
+  opacity: 0.6;
+  font-weight: 500;
 }
 .lsb-sub {
   font-size: 18px;
@@ -1089,8 +1095,8 @@ main.drake-main {
   color: var(--silver_color);
 }
 .left-sidebar .social-profile li a:hover {
-  color: var(--primary_color);
-  border-color: var(--primary_color);
+  color: var(--accent_color);
+  border-color: var(--accent_color);
 }
 .left-sidebar .theme-btn {
   width: 100%;
@@ -1138,10 +1144,9 @@ main.drake-main {
   font-weight: 300;
   font-size: 75px;
   letter-spacing: -0.2px;
-  line-height: 90px;
   margin-bottom: 24px;
   font-weight: 400;
-  line-height: 1.1;
+  line-height: 1.2;
   letter-spacing: -1.5px;
   color: white;
 }
@@ -1154,10 +1159,10 @@ main.drake-main {
 }
 
 .hero-section .hero-content .hero-container > p {
-  max-width: 550px;
+  max-width: 610px;
   margin-bottom: 31px;
   font-size: 18px;
-  color: white;
+  color: var(--silver_dark);
 }
 .hero-section .hero-content .go-to-project-btn {
   width: 150px;
@@ -1165,7 +1170,7 @@ main.drake-main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 10vw;
+  margin-left: 15vw;
   border-radius: 50%;
   border: 1px solid var(--border_color);
   position: relative;
@@ -1213,14 +1218,19 @@ main.drake-main {
   height: 125px;
 }
 
+.facts-outer {
+  align-items: center;
+}
+
 .hero-section .hero-content .facts {
   gap: 100px;
-  margin-top: 55px;
+  margin-top: 125px;
 }
 .hero-section .hero-content .facts h2 {
   font-size: 72px;
   font-family: var(--tech_font);
   color: var(--accent_color);
+  opacity: 0.8;
   line-height: 56px;
   margin-bottom: 18px;
   font-weight: 300;
@@ -1655,7 +1665,7 @@ body .body-overlay.loaded {
   background-position: center;
   background-size: cover;
   background-blend-mode: luminosity;
-  opacity: 1;
+  opacity: 0.6;
   z-index: -1;
   border-radius: 30px;
 }
@@ -1685,7 +1695,7 @@ body .body-overlay.loaded {
   font-weight: 600;
 }
 .testimonial-item .testimonial-item-inner .author p span {
-  color: var(--primary_color);
+  color: var(--accent_color);
 }
 .testimonial-item .testimonial-item-inner > p {
   font-size: 18px;
@@ -1733,8 +1743,8 @@ body .body-overlay.loaded {
     .testimonial-footer-nav
     .testimonial-nav
     button:hover {
-    border-color: var(--primary_color);
-    color: var(--primary_color);
+    border-color: var(--accent_color);
+    color: var(--accent_color);
   }
 }
 
