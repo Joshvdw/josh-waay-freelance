@@ -32,37 +32,17 @@ export default function Service() {
 
           <div className="services-items">
             <div
-              className="service-item scroll-animation design"
-              data-aos="fade-up"
-            >
-              <i class="las la-crop"></i>
-              <h2>Design & Branding</h2>
-              <p>
-                I collaborate with a trusted network of experienced designers to
-                deliver beautiful, functional digital experiences. With a sharp
-                eye for detail and a strong sense of design direction, I help
-                guide the creative process — ensuring each project has a
-                cohesive visual language and intuitive user experience.
-              </p>
-              <span className="projects">
-                Figma | Adobe Suite | Lottie | AI Tools
-              </span>
-            </div>
-            <div
               className="service-item scroll-animation code"
               data-aos="fade-up"
             >
               <i className="las la-code-branch"></i>
-              <h2>Fullstack Development</h2>
+              <h2>Web Development</h2>
               <p>
-                Our websites are built for performance, with fast load times
-                that enhance both user experience and SEO. They offer improved
-                security by eliminating always-on servers, reducing potential
-                vulnerabilities. Scalability is seamless, handling traffic
-                spikes without the need for expensive infrastructure. With
-                intuitive content editing tools, non-technical team members can
-                make updates easily. Plus, they’re more cost-efficient to host
-                and maintain than traditional websites.
+                Custom websites built on a modern tech stack designed for speed,
+                scalability, and cost-efficiency. If keeping your existing site,
+                I offer comprehensive audits covering design, content, UX,
+                performance, new features, and SEO. I also specialise in Webflow
+                and custom JavaScript for no-code platforms.
               </p>
               <span className="projects">
                 React | Nextjs | Vercel | typescript | sanity | supabase <br />{" "}
@@ -74,17 +54,35 @@ export default function Service() {
               data-aos="fade-up"
             >
               <i class="las la-project-diagram"></i>
-              <h2>Creative Development</h2>
+              <h2>Digital Experiences</h2>
               <p>
-                Looking to make a lasting impression? I specialise in crafting
-                bespoke, experiential web experiences that push the boundaries
-                of creativity and technology. Whether it's a microsite, digital
-                installation, or an interactive brand story, I blend code,
-                design, sound, and motion to deliver emotionally engaging and
-                memorable experiences.
+                Using the latest in 3D, animation, sound design, and creative
+                coding, I craft immersive web experiences that push boundaries
+                of technology. From interactive storytelling and motion-rich
+                interfaces to browser-based games and experimental art
+                installations, I create innovative websites that spark emotion
+                and leave a lasting impression on visitors.
               </p>
               <span className="projects">
                 GSAP | Webgl | unity | C# | Sound design{" "}
+              </span>
+            </div>
+            <div
+              className="service-item scroll-animation design"
+              data-aos="fade-up"
+            >
+              <i class="las la-crop"></i>
+              <h2>Design & Branding</h2>
+              <p>
+                From wireframes to full branding systems, I blend art direction,
+                accessibility best practices, and responsiveness to create
+                website designs that work seamlessly across all devices. With a
+                strong UX foundation and meticulous attention to detail, I
+                balance visual impact with an intuitive, user-friendly
+                interface.
+              </p>
+              <span className="projects">
+                Figma | Adobe Suite | Lottie | AI Tools
               </span>
             </div>
           </div>

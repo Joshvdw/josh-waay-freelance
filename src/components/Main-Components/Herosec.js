@@ -51,14 +51,17 @@ export default function Herosec() {
           <div className={"hero-container"}>
             <div className="section-header">
               <h1 className="scroll-animation" data-aos="fade-up">
-                I help businesses turn websites into{" "}
-                <span>modern experiences</span>
+                I help unlock your digital potential with{" "}
+                <span>Creative Web Solutions</span>
+                <span> </span>
               </h1>
             </div>
 
             <p className="scroll-animation" data-aos="fade-up">
-              Crafting visually captivating and intuitive web solutions with
-              creativity, innovation, and a passion for pixel perfection.
+              Your website should not only look great but spark curiosity and
+              keep users engaged. With my custom designs and development
+              expertise, I deliver memorable experiences that scale, perform,
+              and convert visitors into customers.
             </p>
             <div className="d-flex">
               <div className="facts d-flex">
@@ -71,8 +74,11 @@ export default function Herosec() {
                   </p>
                 </div>
                 <div className="right scroll-animation" data-aos="fade-left">
-                  <h2 className="facts-text">28+</h2>
-                  <p>projects completed in 7 countries</p>
+                  <h2 className="facts-text">30+</h2>
+                  <p>
+                    web projects <br />
+                    in 7 countries
+                  </p>
                 </div>
               </div>
               <a
