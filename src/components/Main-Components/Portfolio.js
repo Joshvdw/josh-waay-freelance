@@ -39,6 +39,10 @@ export default function Portfolio() {
               className={"custom-line scroll-animation"}
               data-aos="fade-up"
             />
+            <div
+              className="mobile-line scroll-animation"
+              data-aos="fade-up"
+            ></div>
           </div>
 
           <div className="row portfolio-items">

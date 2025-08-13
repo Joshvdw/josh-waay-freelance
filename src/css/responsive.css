@@ -559,6 +559,16 @@
   .client-row {
     /* --bs-gutter-x: 3rem; */
   }
+  .mobile-line {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--border_color);
+    margin: 15px 0 30px 0;
+  }
+  .custom-line {
+    display: none;
+  }
   .custom-line {
     margin-bottom: 30px;
     margin-top: 15px;
@@ -574,22 +584,23 @@
   }
   .testimonial-footer-nav {
     margin-top: 30px !important;
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-self: center;
-    width: 100%;
+    width: 100vw;
     left: 0;
   }
   .testimonial-nav {
     position: absolute;
     top: -350px;
     z-index: 5;
-    width: 100vw;
-    padding: 0 15px;
+    margin-left: -15px;
+    padding-right: 30px;
     justify-content: space-between;
-    width: 94vw;
-    left: -5vw;
+    width: 100vw;
+    left: 0;
+    /* left: -5vw; */
   }
   #testimonial-slide-count {
     display: none;

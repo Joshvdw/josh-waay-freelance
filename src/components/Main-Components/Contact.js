@@ -58,6 +58,10 @@ export default function Contact() {
               className={"custom-line scroll-animation"}
               data-aos="fade-up"
             />
+            <div
+              className="mobile-line scroll-animation"
+              data-aos="fade-up"
+            ></div>
           </div>
           {/*<br/><br/>*/}
           {/*<a href={"mailto:hello@joshwaay.dev"} target={"_blank"}>*/}

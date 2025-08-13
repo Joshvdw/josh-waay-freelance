@@ -29,7 +29,10 @@ export default function Service() {
               data-aos="fade-up"
             />
           </div>
-
+          <div
+            className="mobile-line scroll-animation"
+            data-aos="fade-up"
+          ></div>
           <div className="services-items">
             <div
               className="service-item scroll-animation code"
