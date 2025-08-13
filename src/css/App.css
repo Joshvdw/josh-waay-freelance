@@ -1152,7 +1152,9 @@ main.drake-main {
 .mobile-line {
   display: none;
 }
-
+  .section-header h1 br {
+    display: none;
+  }
 /* 07 - Hero Section */
 .hero-section {
   padding: 68px 0;

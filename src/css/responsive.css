@@ -192,7 +192,7 @@
     max-width: 100%;
   }
   .testimonial-area {
-    padding-top: 50px;
+    /* padding-top: 50px; */
   }
   .section-header h1 {
     font-size: 56px;
@@ -560,10 +560,10 @@
     /* --bs-gutter-x: 3rem; */
   }
   .mobile-line {
-    display: block;
+    /* display: block; */
     height: 1px;
     width: 100%;
-    background-color: var(--border_color);
+    background-color: rgb(47, 47, 47);
     margin: 15px 0 30px 0;
   }
   .custom-line {
@@ -595,8 +595,8 @@
     position: absolute;
     top: -350px;
     z-index: 5;
-    margin-left: -15px;
-    padding-right: 30px;
+    margin-left: -25px;
+    padding-right: 12.5px;
     justify-content: space-between;
     width: 100vw;
     left: 0;
@@ -647,7 +647,10 @@
     display: none;
   }
   .lsb-outer {
-    margin: 30px 15px;
+    margin: 30px 15px 0px 15px;
+  }
+  .custom-container {
+    /* padding: 0 15px; */
   }
   .hero-section .hero-content .facts p {
     font-size: 12px;
@@ -659,6 +662,10 @@
   .section-header h1 {
     font-size: 11vw;
     line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .section-header h1 br {
+    display: block;
   }
   .services-items .service-item h2 {
     font-size: 7vw;
@@ -696,9 +703,9 @@
   .services-items {
     grid-template-columns: 1fr;
   }
-  .portfolio-area {
-    padding-top: 40px;
-  }
+  /* .portfolio-area {
+    padding-top: 40px; */
+  /* } */
   .clients-logos .row .col-md-3 {
     /* width: 50%; */
   }
@@ -817,7 +824,7 @@
     right: 0;
   }
   .hero-text {
-    margin-bottom: 15px;
+    margin-bottom: 0;
     max-width: 19rem;
     font-size: 14px;
     line-height: 1.6;
@@ -880,7 +887,10 @@
     font-size: 20px;
   }
   .hero-section .hero-content .facts h2 {
-    margin-bottom: 5px !important;
+    margin-bottom: 0 !important;
+  }
+  .hero-section .hero-content .facts p {
+    font-size: 10px;
   }
   .client-row {
     --bs-gutter-x: 25px;
@@ -897,8 +907,8 @@
     line-height: 1.6;
   }
   .testimonial-item-inner {
-    min-height: 550px !important;
-    /* padding: 20px !important; */
+    min-height: 580px !important;
+    padding: 20px !important;
   }
   .contact-area {
     padding-bottom: 0;
@@ -916,7 +926,7 @@
     height: 8px !important;
   }
   .section-header h1 {
-    font-size: 9.5vw;
+    font-size: 9vw;
     line-height: 1.2;
   }
   .hero-container {

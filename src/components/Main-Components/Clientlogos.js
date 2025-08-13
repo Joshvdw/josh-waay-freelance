@@ -13,7 +13,8 @@ export default function Clientlogos() {
           <div class="clients-logos">
             <div className="section-header">
               <h1 className="scroll-animation" data-aos="fade-up">
-                You're in <span>Good Company</span>
+                You're in <br />
+                <span>Good Company</span>
               </h1>
               <img
                 src="../assets/images/project-title_underline.png"
