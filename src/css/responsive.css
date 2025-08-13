@@ -503,6 +503,9 @@
     min-height: 7rem;
     height: 7rem;
   }
+  .clients-logos img {
+    opacity: 1 !important;
+  }
   .client-row {
     /* --bs-gutter-x: 3rem; */
   }
