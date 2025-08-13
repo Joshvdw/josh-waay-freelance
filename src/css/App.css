@@ -1008,8 +1008,9 @@ main.drake-main {
   border-radius: 15px;
   display: block;
   margin-bottom: 30px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
+
 .left-sidebar.loaded {
   opacity: 1 !important;
   transform: translateY(-50%) translateX(0%);
