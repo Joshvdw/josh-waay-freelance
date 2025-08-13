@@ -46,7 +46,7 @@ export default function Portfolio() {
               <div className="portfolio-item portfolio-full">
                 <div className="portfolio-item-inner">
                   <PortfolioLink />
-                  <p>Click on video to visit my portfolio</p>
+                  {/* <p>Click on video to visit my portfolio</p> */}
                   {/*<ul className="portfolio-categories">*/}
                   {/*    <li>*/}
                   {/*        <a href="https://www.figma.com">Figma</a>*/}

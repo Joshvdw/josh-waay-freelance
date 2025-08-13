@@ -60,6 +60,9 @@
 }
 
 @media (max-width: 1220px) {
+  .services-items .service-item p {
+    max-width: 76%;
+  }
   .custom-container {
     max-width: 767px;
   }
