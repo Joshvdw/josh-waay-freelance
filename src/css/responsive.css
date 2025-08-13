@@ -628,7 +628,9 @@
   .services-items .service-item .projects br {
     display: none;
   }
-
+  .lsb-outer {
+    margin: 30px 15px;
+  }
   .hero-section .hero-content .facts p {
     font-size: 12px;
     line-height: 18px;
@@ -661,6 +663,12 @@
   /*}*/
   .hero-section .hero-content .facts {
     gap: 50px;
+  }
+  .texture-cover {
+    background-blend-mode: normal;
+  }
+  .hero-container {
+    gap: 3vw;
   }
   .resume-area .resume-content .resume-timeline .item {
     padding-left: 50px;

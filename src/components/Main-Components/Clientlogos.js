@@ -6,6 +6,7 @@ export default function Clientlogos() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+  const isMobile = window.innerWidth <= 768;
   return (
     <section id={"clients"}>
       <div className="custom-container full-height-container">
@@ -16,7 +17,11 @@ export default function Clientlogos() {
                 You're in <span>Good Company</span>
               </h1>
               <img
-                src="../assets/images/project-title_underline.png"
+                src={
+                  isMobile
+                    ? "../assets/images/project-title_underline-bright.png"
+                    : "../assets/images/project-title_underline.png"
+                }
                 alt="Client"
                 className={"custom-line scroll-animation"}
                 data-aos="fade-up"

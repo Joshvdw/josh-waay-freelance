@@ -16,6 +16,7 @@ export default function Portfolio() {
   //       wrapAround: true
   //     });
   //   }, []);
+  const isMobile = window.innerWidth <= 768;
   return (
     <section
       className="portfolio-area page-section scroll-to-page"
@@ -34,7 +35,11 @@ export default function Portfolio() {
               </h4>
             </div>
             <img
-              src="../assets/images/project-title_underline.png"
+              src={
+                isMobile
+                  ? "../assets/images/project-title_underline-bright.png"
+                  : "../assets/images/project-title_underline.png"
+              }
               alt="Client"
               className={"custom-line scroll-animation"}
               data-aos="fade-up"

@@ -39,6 +39,7 @@ export default function Contact() {
   useEffect(() => {
     AOS.init({ duration: 1300 });
   }, []);
+  const isMobile = window.innerWidth <= 768;
   return (
     <section className="contact-area page-section scroll-content" id="contact">
       <div className="custom-container full-height-container">
@@ -53,7 +54,11 @@ export default function Contact() {
               </h4>
             </div>
             <img
-              src="../assets/images/project-title_underline.png"
+              src={
+                isMobile
+                  ? "../assets/images/project-title_underline-bright.png"
+                  : "../assets/images/project-title_underline.png"
+              }
               alt="Client"
               className={"custom-line scroll-animation"}
               data-aos="fade-up"
