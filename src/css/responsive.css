@@ -551,7 +551,7 @@
     height: 7rem;
   }
   .clients-logos img {
-    opacity: 1 !important;
+    opacity: 0.8 !important;
   }
   .client-row {
     /* --bs-gutter-x: 3rem; */
@@ -579,9 +579,10 @@
     position: absolute;
     top: -320px;
     z-index: 5;
-    margin-left: 1dvw;
-    /* left: -10px; */
-    width: 98dvw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 2vw);
+
     justify-content: space-between;
   }
   #testimonial-slide-count {
@@ -666,6 +667,8 @@
   }
   .texture-cover {
     background-blend-mode: normal;
+    opacity: 1;
+    filter: brightness(0.2);
   }
   .hero-container {
     gap: 3vw;
@@ -881,5 +884,14 @@
   }
   .services-items .service-item h2 {
     font-size: clamp(8vw, 30px, 9999px);
+  }
+  .is-video {
+    font-size: 12px;
+    width: 12rem;
+    padding: 10px 20px;
+  }
+  .is-video img {
+    width: 8px !important;
+    height: 8px !important;
   }
 }

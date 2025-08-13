@@ -1158,7 +1158,7 @@ main.drake-main {
 .hero-section .hero-content {
   position: relative;
   z-index: 3;
-  min-height: 100dvh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1287,7 +1287,7 @@ main.drake-main {
 }
 
 .hero-section {
-  height: 100dvh;
+  height: 100svh;
   padding: 0;
 }
 .logo-home {
