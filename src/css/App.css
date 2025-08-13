@@ -2062,7 +2062,8 @@ body .body-overlay.loaded {
 }
 
 .red {
-  color: var(--primary_color);
+  color: var(--accent_color);
+  font-weight: 600;
 }
 
 .white {
