@@ -789,7 +789,7 @@
 
   .left-sidebar img.me {
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
   }
 }
 @media (max-width: 425px) {
@@ -831,11 +831,11 @@
   }
   .hero-content {
     /* padding: 0; */
-    padding-top: 7vh;
+    padding-top: 15px;
   }
   .hero-section .hero-content h1 {
     /* line-height: 1.1; */
-    font-size: 13.5vw;
+    font-size: 12.5vw;
     margin-bottom: 10px;
   }
   .drake-main .left-sidebar {
@@ -880,7 +880,7 @@
     margin-right: 0;
     width: 75px;
     height: 75px;
-    margin-top: -150px;
+    /* margin-top: -120px; */
   }
   .hero-section .hero-content .go-to-project-btn i {
     /* width: 60% !important; */

@@ -1152,9 +1152,12 @@ main.drake-main {
 .mobile-line {
   display: none;
 }
-  .section-header h1 br {
-    display: none;
-  }
+.section-header h1 br {
+  display: none;
+}
+.hero-section .hero-content br {
+  display: block;
+}
 /* 07 - Hero Section */
 .hero-section {
   padding: 68px 0;
@@ -1172,7 +1175,7 @@ main.drake-main {
 .hero-section .hero-content h1 {
   font-family: var(--tech_font);
   font-weight: 300;
-  font-size: 76px;
+  font-size: 77px;
   letter-spacing: -0.2px;
   margin-bottom: 24px;
   font-weight: 400;
