@@ -28,6 +28,7 @@ export default function Portfolio() {
               <h1 className="scroll-animation" data-aos="fade-up">
                 View my <span>Projects</span>
               </h1>
+
               <h4 className="subtitle scroll-animation" data-aos="fade-up">
                 <i className="las la-grip-vertical"></i>portfolio
               </h4>
@@ -45,7 +46,7 @@ export default function Portfolio() {
               <div className="portfolio-item portfolio-full">
                 <div className="portfolio-item-inner">
                   <PortfolioLink />
-
+                  {/* <p>Click on video to visit my portfolio</p> */}
                   {/*<ul className="portfolio-categories">*/}
                   {/*    <li>*/}
                   {/*        <a href="https://www.figma.com">Figma</a>*/}

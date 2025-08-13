@@ -196,9 +196,36 @@ ul {
   box-shadow: 0 0 30px 10px rgba(160, 23, 3, 0.4) !important;
 }
 
+.portfolio-video:hover + .is-video,
+.portfolio-video:hover ~ .is-video {
+  opacity: 1;
+  color: #ffffff;
+  background: var(--primary_color);
+  box-shadow: 0 0 30px 10px rgba(160, 23, 3, 0.4) !important; /* Red hex color */
+}
+
 .portfolio-link:has(.theme-btn.is-portfolio:hover) .portfolio-video {
   opacity: 0.2 !important;
   transform: scale(1.1) !important;
+}
+
+.is-video {
+  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out, transform 1s ease-in-out !important;
+}
+
+.is-video img {
+  margin-left: 10px;
+  margin-top: -5px;
+  width: 10px !important;
+  height: 10px !important;
+  /* opacity: 0.8; */
 }
 
 .theme-btn.is-portfolio {
@@ -266,7 +293,7 @@ ul {
   padding: 11px 58px 10px 58px;
   display: inline-flex;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 15px;
   justify-content: center;
   text-transform: uppercase;
   border: none;
@@ -1779,9 +1806,10 @@ body .body-overlay.loaded {
 }
 
 /* 16 - Client */
-/*.clients-logos {*/
-/*  padding-top: 100px;*/
-/*}*/
+.clients-logos img {
+  position: relative;
+  z-index: 10;
+}
 .clients-logos h4 {
   color: #fff;
   text-transform: uppercase;
@@ -2684,6 +2712,10 @@ body .body-overlay.loaded {
 /*  top: 50%;*/
 /*  transform: translateY(-50%);*/
 /*}*/
+
+.sidebar-menu-inner .menu::before {
+  background-image: unset !important;
+}
 
 /* @Keyframe */
 @keyframes rotating {

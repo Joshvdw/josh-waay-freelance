@@ -36,7 +36,12 @@ const PortfolioLink = () => {
   }, []);
 
   return (
-    <a href="https://joshwaay.dev" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+    <a
+      href="https://joshwaay.dev"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="portfolio-link"
+    >
       {/*<img src="../assets/images/openGraphPreview.webp" alt="Portfolio link" />*/}
       <video
         autoPlay
@@ -53,10 +58,20 @@ const PortfolioLink = () => {
       <div
         href="www.joshwaay.dev"
         target="_blank"
+        className="theme-btn is-video"
+      >
+        Visit Portfolio
+        <span>
+          <img src="../assets/images/link-icon.svg" alt="link icon"></img>
+        </span>
+      </div>
+      {/* <div
+        href="www.joshwaay.dev"
+        target="_blank"
         className="theme-btn is-portfolio"
       >
         <i class="las la-external-link-alt"></i> View Portfolio
-      </div>
+      </div> */}
     </a>
   );
 };
