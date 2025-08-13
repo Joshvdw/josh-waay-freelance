@@ -1158,7 +1158,7 @@ main.drake-main {
 .hero-section .hero-content {
   position: relative;
   z-index: 3;
-  height: 100svh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1166,7 +1166,7 @@ main.drake-main {
 .hero-section .hero-content h1 {
   font-family: var(--tech_font);
   font-weight: 300;
-  font-size: 75px;
+  font-size: 76px;
   letter-spacing: -0.2px;
   margin-bottom: 24px;
   font-weight: 400;
@@ -1182,7 +1182,7 @@ main.drake-main {
   will-change: text-shadow;
 }
 
-.hero-section .hero-content .hero-container > p {
+.hero-text {
   max-width: 610px;
   margin-bottom: 31px;
   font-size: 18px;
@@ -1209,7 +1209,8 @@ main.drake-main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 15vw;
+  margin-left: auto;
+  margin-right: 10px;
   border-radius: 50%;
   border: 1px solid var(--border_color);
   position: relative;
@@ -1262,7 +1263,7 @@ main.drake-main {
 }
 
 .hero-section .hero-content .facts {
-  gap: 100px;
+  gap: 50px;
   margin-top: 125px;
 }
 .hero-section .hero-content .facts h2 {
@@ -1282,7 +1283,7 @@ main.drake-main {
 }
 
 .facts div {
-  max-width: 180px;
+  width: 180px;
 }
 
 .hero-section {

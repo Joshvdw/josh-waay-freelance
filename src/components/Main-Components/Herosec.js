@@ -48,23 +48,25 @@ export default function Herosec() {
     <section className="hero-section page-section scroll-to-page" id="home">
       <div className="custom-container">
         <div className="hero-content content-width">
-          <div className={"hero-container has-blu"}>
-            <div className="section-header">
-              <h1 className="scroll-animation" data-aos="fade-up">
-                Unlock your full{""}
-                <br /> Digital Potential with <span></span>
-                <br></br>
-                <span>Custom Web Solutions</span>
-              </h1>
+          <div className={"hero-container has-blur"}>
+            <div className="hero-inner">
+              <div className="section-header">
+                <h1 className="scroll-animation" data-aos="fade-up">
+                  Unlock your full{""}
+                  <br /> Digital Potential with <span></span>
+                  <br></br>
+                  <span>Custom Web Solutions</span>
+                </h1>
+              </div>
+              {/* <div className="has-blur"> */}
+              <div className="text-backdrop"></div>
+              <p className="scroll-animation hero-text" data-aos="fade-up">
+                Your website should not only look great but spark curiosity and
+                keep visitors engaged. With my custom designs and development
+                expertise, I deliver memorable experiences that scale, perform,
+                and convert.
+              </p>
             </div>
-            {/* <div className="has-blur"> */}
-            <div className="text-backdrop"></div>
-            <p className="scroll-animation" data-aos="fade-up">
-              Your website should not only look great but spark curiosity and
-              keep visitors engaged. With my custom designs and development
-              expertise, I deliver memorable experiences that scale, perform,
-              and convert.
-            </p>
             {/* </div> */}
             <div className="d-flex facts-outer">
               <div className="facts d-flex">
