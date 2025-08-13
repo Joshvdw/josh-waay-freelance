@@ -30,7 +30,7 @@ export default function Lsb() {
             </p>
             <ul className="social-profile d-flex align-items-center flex-wrap justify-content-center">
               <li>
-                <a href="https://joshwaay.dev" target={"_blank"}>
+                <a href="https://portfolio.joshwaay.dev/" target={"_blank"}>
                   <i className="las la-briefcase"></i>
                 </a>
               </li>

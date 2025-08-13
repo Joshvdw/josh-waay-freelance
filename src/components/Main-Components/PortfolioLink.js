@@ -37,7 +37,7 @@ const PortfolioLink = () => {
 
   return (
     <a
-      href="https://joshwaay.dev"
+      href="https://portfolio.joshwaay.dev/"
       target="_blank"
       rel="noopener noreferrer"
       className="portfolio-link"
