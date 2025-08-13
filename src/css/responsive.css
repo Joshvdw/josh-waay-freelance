@@ -551,7 +551,7 @@
     height: 7rem;
   }
   .clients-logos img {
-    opacity: 0.6 !important;
+    opacity: 0.9 !important;
   }
   .client-row {
     /* --bs-gutter-x: 3rem; */
@@ -581,7 +581,7 @@
     position: absolute;
     top: -350px;
     z-index: 5;
-    width: 100%;
+    width: 100vw;
     padding: 0 15px;
     justify-content: space-between;
   }
@@ -806,7 +806,7 @@
     line-height: 1.6;
   }
   .hero-content {
-    padding: 50px 0;
+    padding: 0;
   }
   .hero-section .hero-content h1 {
     /* line-height: 1.1; */
@@ -896,5 +896,9 @@
   .is-video img {
     width: 8px !important;
     height: 8px !important;
+  }
+  .section-header h1 {
+    font-size: 9.5vw;
+    line-height: 1.2;
   }
 }

@@ -6,7 +6,6 @@ export default function Service() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-  const isMobile = window.innerWidth <= 768;
   return (
     <section
       className="services-area page-section scroll-to-page"
@@ -24,11 +23,7 @@ export default function Service() {
               </h4>
             </div>
             <img
-              src={
-                isMobile
-                  ? "../assets/images/project-title_underline-bright.png"
-                  : "../assets/images/project-title_underline.png"
-              }
+              src="../assets/images/project-title_underline.png"
               alt="Client"
               className={"custom-line scroll-animation"}
               data-aos="fade-up"
