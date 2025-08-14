@@ -1031,7 +1031,7 @@ main.drake-main {
   border-radius: 15px;
   display: block;
   margin-bottom: 30px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 .left-sidebar.loaded {

@@ -815,6 +815,9 @@
     width: 100%;
     max-width: 350px;
   }
+  .contact-area .contact-content .contact-form .input-group {
+    margin-bottom: 20px! important;
+  }
   .is-video {
     border-radius: 10px !important;
   }
