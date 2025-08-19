@@ -874,11 +874,11 @@
   }
   .hero-content {
     /* padding: 0; */
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 60px;
   }
   .hero-section .hero-content h1 {
-    /* line-height: 1.1; */
+    line-height: 1.1;
     font-size: 13.7vw;
     margin-bottom: 10px;
   }
@@ -928,7 +928,7 @@
     margin-right: 0;
     /* width: 75px;
     height: 75px; */
-    /* margin-top: -160px; */
+    margin-top: -10vh;
   }
   .hero-section .hero-content .go-to-project-btn i {
     /* width: 60% !important; */
