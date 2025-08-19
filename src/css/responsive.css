@@ -868,9 +868,9 @@
   }
   .hero-text {
     margin-bottom: 0;
-    max-width: 22rem;
+    max-width: 300px;
     font-size: 4vw;
-    line-height: 1.6;
+    line-height: 1.5;
   }
   .hero-content {
     /* padding: 0; */
@@ -879,8 +879,11 @@
   }
   .hero-section .hero-content h1 {
     line-height: 1.1;
-    font-size: 13.7vw;
+    font-size: 13.4vw;
     margin-bottom: 10px;
+  }
+  .hero-section .hero-content span {
+    font-size: 14.5vw;
   }
   .drake-main .left-sidebar {
     padding: 0 0 20px 0;
