@@ -866,7 +866,7 @@
   }
   .hero-section .hero-content h1 {
     /* line-height: 1.1; */
-    font-size: 13.7vw;
+    /* font-size: 13.7vw; */
     margin-bottom: 10px;
   }
   .drake-main .left-sidebar {
@@ -969,7 +969,7 @@
     line-height: 1.2;
   }
   .hero-container {
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 15vw;
   }
   .portfolio-area {
