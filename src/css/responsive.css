@@ -269,9 +269,7 @@
     letter-spacing: -1px;
     margin-bottom: 15px;
   }
-  .hero-section .hero-content br {
-    display: none;
-  }
+
   /* .hero-section .hero-content h1 span {
     font-weight: 600 !important;
   } */
@@ -514,6 +512,7 @@
     opacity: 1;
     min-height: 120px;
     margin-bottom: 0 !important;
+    color: white;
   }
   .services-items .service-item p,
   .services-items .service-item .projects {
@@ -533,7 +532,7 @@
     padding: 40px !important;
   }
   .section-header h1 {
-    font-size: 7vw;
+    font-size: 6.5vw;
   }
   .services-items .service-item h2 {
     font-size: 5vw;
@@ -672,7 +671,7 @@
     margin-bottom: 40px;
   }
   .section-header h1 {
-    font-size: 9.5vw;
+    font-size: 8.5vw;
     line-height: 1.2;
     margin-bottom: 30px;
     color: white;
@@ -793,6 +792,10 @@
     font-size: 7vw;
   }
 
+  .address {
+    font-weight: 600 !important;
+  }
+
   .copyright {
     font-size: 2.5vw !important;
     text-align: center !important;
@@ -856,13 +859,14 @@
   }
   .hero-text {
     margin-bottom: 0;
-    max-width: 19rem;
+    max-width: none;
     font-size: 14px;
     line-height: 1.6;
   }
   .hero-content {
     /* padding: 0; */
-    padding-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .hero-section .hero-content h1 {
     /* line-height: 1.1; */
@@ -913,9 +917,9 @@
   }
   .hero-section .hero-content .go-to-project-btn {
     margin-right: 0;
-    width: 75px;
-    height: 75px;
-    /* margin-top: -120px; */
+    /* width: 75px;
+    height: 75px; */
+    margin-top: -160px;
   }
   .hero-section .hero-content .go-to-project-btn i {
     /* width: 60% !important; */
@@ -926,6 +930,9 @@
   }
   .hero-section .hero-content .facts p {
     font-size: 10px;
+  }
+  .hero-section .hero-content br {
+    display: none;
   }
   .client-row {
     --bs-gutter-x: 25px;
@@ -965,7 +972,7 @@
     height: 8px !important;
   }
   .section-header h1 {
-    font-size: 11.2vw;
+    font-size: 9vw;
     line-height: 1.2;
   }
   .hero-container {
