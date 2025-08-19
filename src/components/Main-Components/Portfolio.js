@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 // import AOS from 'aos'
 // import 'aos/dist/aos.css'
 // import Lightbox from 'lightbox2';
@@ -7,6 +7,9 @@ import PortfolioLink from "./PortfolioLink";
 // import 'lightbox2/dist/js/lightbox.js';
 
 export default function Portfolio() {
+  const mobileVideoTrigger = useRef(null);
+  // useEffect(() => {
+
   // useEffect(() => {
   //     AOS.init({ duration: 1000 });
   //     Lightbox.option({
@@ -46,10 +49,15 @@ export default function Portfolio() {
           </div>
 
           <div className="row portfolio-items">
-            <div className="col-md-12 scroll-animation" data-aos="fade-up">
+            <div
+              ref={mobileVideoTrigger}
+              id="mobileVideoTrigger"
+              className="col-md-12 scroll-animation"
+              data-aos="fade-up"
+            >
               <div className="portfolio-item portfolio-full">
                 <div className="portfolio-item-inner">
-                  <PortfolioLink />
+                  <PortfolioLink mobileVideoTrigger={mobileVideoTrigger} />
                   {/* <p>Click on video to visit my portfolio</p> */}
                   {/*<ul className="portfolio-categories">*/}
                   {/*    <li>*/}

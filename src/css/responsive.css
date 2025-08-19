@@ -60,6 +60,9 @@
 }
 
 @media (max-width: 1220px) {
+  .copyright {
+    text-align: left !important;
+  }
   .services-items .service-item p {
     max-width: 76%;
   }
@@ -97,27 +100,9 @@
   .services-area {
     /* padding-top: 150px; */
   }
-  /* .testimonial-area
-    .testimonial-slider-wrap
-    .testimonial-footer-nav
-    .testimonial-nav
-    button:hover {
-    color: #fff !important;
-    border: 1px solid var(--border_color) !important;
-  } */
-  /* .hero-section .hero-content .go-to-project-btn {
-    margin-left: 10rem;
-  } */
-
-  /* .left-sidebar .social-profile li a {
-    width: 75px !important;
-    height: 75px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-  } */
-
+  .services-items .service-item i {
+    opacity: 1;
+  }
   .facts {
     gap: 5vw !important;
   }
@@ -226,6 +211,19 @@
   .hero-section .custom-container {
     padding-top: 0;
   }
+  .is-video {
+    opacity: 1 !important;
+    padding: 15px 40px;
+    background: var(--primary_color);
+    box-shadow: 0 0 30px 10px rgba(160, 23, 3, 0.4) !important;
+  }
+  .portfolio-video {
+    opacity: 0.5 !important;
+  }
+  .left-sidebar .social-profile li a {
+    width: 40px;
+    height: 40px;
+  }
 }
 @media (max-width: 977px) {
   .blog-three-columns-main .blog-content-area .row > .col-md-4 {
@@ -267,17 +265,19 @@
     display: none;
   }
   .hero-section .hero-content h1 {
-    font-size: 11.4vw;
+    font-size: 8.3vw;
     letter-spacing: -1px;
+    margin-bottom: 15px;
   }
   .hero-section .hero-content br {
-    display: none;
+    /* display: none; */
   }
   /* .hero-section .hero-content h1 span {
     font-weight: 600 !important;
   } */
   .hero-section .hero-content .facts h2 {
-    font-size: 52px !important;
+    font-size: 48px !important;
+    margin-bottom: 10px !important;
   }
   .facts-outer {
     justify-content: space-between;
@@ -446,12 +446,16 @@
     margin-top: -70px;
     /* margin-left: 50px; */
   }
+  .hero-section .hero-content .facts p {
+    font-size: 12px;
+    line-height: 20px;
+  }
   .hero-text {
     margin-bottom: 10px;
     /* font-size: clamp(18px, 2.7vw, 40px); */
-    font-size: 18px;
+    font-size: 16px;
     max-width: none;
-    max-width: 32rem;
+    max-width: 33.7rem;
   }
   .hero-section .hero-content .facts {
     gap: 70px;
@@ -535,16 +539,8 @@
     font-size: 5vw;
     font-weight: 500;
   }
-  .portfolio-video {
-    opacity: 0.3 !important;
-  }
-  .is-video {
-    opacity: 1 !important;
-    padding: 15px 40px;
-
-    /* color: #ffffff;
-    background: var(--primary_color);
-    box-shadow: 0 0 30px 10px rgba(160, 23, 3, 0.4) !important;  */
+  .clients-logos img {
+    opacity: 0.9 !important;
   }
 }
 @media (max-width: 584px) {
@@ -565,14 +561,13 @@
     left: unset;
     transform: unset;
     width: 100% !important;
-    margin-top: 20px;
+    margin-top: 10px;
+    color: #ffffff;
+    cursor: pointer;
   }
   .clients-logos .col-md-3 {
     min-height: 7rem;
     height: 7rem;
-  }
-  .clients-logos img {
-    opacity: 0.8 !important;
   }
   .client-row {
     /* --bs-gutter-x: 3rem; */
@@ -614,7 +609,7 @@
     top: -350px;
     z-index: 5;
     margin-left: -25px;
-    padding-right: 15px;
+    padding-right: 12px;
     justify-content: space-between;
     width: 100vw;
     left: 0;
@@ -671,7 +666,7 @@
   }
   .hero-section .hero-content .facts p {
     font-size: 12px;
-    line-height: 18px;
+    /* line-height: 18px; */
   }
   .subtitle {
     margin-bottom: 40px;
@@ -702,7 +697,7 @@
     padding-bottom: 0;
   }
   .hero-section .hero-content h1 {
-    font-size: 11vw;
+    /* font-size: 11vw; */
   }
   .hero-section .hero-content .facts h2 {
     font-size: 10vw !important;
@@ -781,13 +776,11 @@
   }
 
   .left-sidebar-inner {
-    gap: 1rem;
+    gap: 1.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* max-width: ; */
-  }
-  .left-sidebar .theme-btn {
   }
 
   .left-sidebar-inner div {
@@ -802,6 +795,7 @@
 
   .copyright {
     font-size: 2.5vw !important;
+    text-align: center !important;
   }
   .left-sidebar .social-profile li a {
     width: 10vw;
@@ -814,9 +808,10 @@
   .left-sidebar img.me {
     width: 100%;
     max-width: 350px;
+    border-radius: 0;
   }
   .contact-area .contact-content .contact-form .input-group {
-    margin-bottom: 20px! important;
+    margin-bottom: 20px !important;
   }
   .is-video {
     border-radius: 10px !important;

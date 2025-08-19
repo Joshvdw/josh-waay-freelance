@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 
-const PortfolioLink = () => {
+const PortfolioLink = ({ mobileVideoTrigger }) => {
   const videoRef = useRef(null);
+  const portfolioLink = useRef(null);
 
   useEffect(() => {
     const videoEl = videoRef.current;
@@ -9,13 +10,6 @@ const PortfolioLink = () => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          // Only set src and play if not already loaded
-          if (
-            !videoEl.src ||
-            videoEl.src.indexOf("portfolio-preview.mp4") === -1
-          ) {
-            videoEl.src = "/assets/videos/portfolio-preview.mp4"; // adjust if needed
-          }
           videoEl.play().catch((e) => {
             console.warn("Video play failed:", e);
           });
@@ -23,12 +17,21 @@ const PortfolioLink = () => {
           videoEl.pause();
         }
       },
-      {
-        threshold: 0.25,
-      }
+      { threshold: 0.25 }
     );
 
     if (videoEl) observer.observe(videoEl);
+
+    if (mobileVideoTrigger && portfolioLink.current) {
+      const handleTrigger = () => {
+        portfolioLink.current.click();
+      };
+      mobileVideoTrigger.current.addEventListener("click", handleTrigger);
+
+      return () => {
+        mobileVideoTrigger.current.removeEventListener("click", handleTrigger);
+      };
+    }
 
     return () => {
       if (videoEl) observer.unobserve(videoEl);
@@ -41,37 +44,26 @@ const PortfolioLink = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="portfolio-link"
+      ref={portfolioLink}
     >
-      {/*<img src="../assets/images/openGraphPreview.webp" alt="Portfolio link" />*/}
       <video
-        autoPlay
+        autoPlay={false} // don’t autoplay until in view
         muted
         loop
         playsInline
         className="portfolio-video"
-        preload="none"
+        preload="auto" // eager load video
         ref={videoRef}
         style={{ opacity: 1 }}
       >
-        {/* no <source> tag to avoid eager loading */}
+        <source src="/assets/videos/portfolio-preview.mp4" type="video/mp4" />
       </video>
-      <div
-        href="www.joshwaay.dev"
-        target="_blank"
-        className="theme-btn is-video"
-      >
+      <div className="theme-btn is-video">
         Visit Portfolio
         <span>
-          <img src="../assets/images/link-icon.svg" alt="link icon"></img>
+          <img src="../assets/images/link-icon.svg" alt="link icon" />
         </span>
       </div>
-      {/* <div
-        href="www.joshwaay.dev"
-        target="_blank"
-        className="theme-btn is-portfolio"
-      >
-        <i class="las la-external-link-alt"></i> View Portfolio
-      </div> */}
     </a>
   );
 };

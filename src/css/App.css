@@ -287,6 +287,7 @@ ul {
 .theme-btn {
   font-family: var(--tech_font);
   background: var(--primary_color-dull);
+  box-shadow: 0 0 30px 10px rgba(160, 23, 3, 0.2);
   color: white;
   font-weight: 600;
   text-align: center;
@@ -299,10 +300,13 @@ ul {
   border: none;
   transition: 0.3s;
   cursor: pointer;
-  box-shadow: 0 0 30px 10px rgba(160, 23, 3, 0.2);
   /* animation: flickerBox 10s infinite ease-in-out; */
   will-change: box-shadow;
   transition: box-shadow 0.1s ease-out;
+}
+
+#mobileVideoTrigger {
+  cursor: pointer;
 }
 
 .theme-btn i {
@@ -1118,10 +1122,10 @@ main.drake-main {
 .left-sidebar .social-profile li a:first-child {
   color: var(--silver_color);
 }
-.left-sidebar .social-profile li a:hover {
+/* .left-sidebar .social-profile li a:hover {
   color: var(--accent_color);
   border-color: var(--accent_color);
-}
+} */
 .left-sidebar .theme-btn {
   width: 100%;
 }
@@ -1794,6 +1798,10 @@ body .body-overlay.loaded {
     button:hover {
     border-color: var(--accent_color);
     color: var(--accent_color);
+  }
+  .left-sidebar .social-profile li a:hover {
+    color: var(--accent_color);
+    border-color: var(--accent_color);
   }
 }
 
