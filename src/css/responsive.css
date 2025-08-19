@@ -926,8 +926,8 @@
   }
   .hero-section .hero-content .go-to-project-btn {
     margin-right: 0;
-    /* width: 75px;
-    height: 75px; */
+    width: 90px;
+    height: 90px;
     margin-top: -8vh;
   }
   .hero-section .hero-content .go-to-project-btn i {
