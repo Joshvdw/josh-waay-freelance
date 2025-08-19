@@ -104,7 +104,7 @@
     opacity: 1;
   }
   .facts {
-    gap: 5vw !important;
+    gap: 4vw !important;
   }
 
   .left-sidebar .social-profile {
@@ -860,7 +860,7 @@
   }
   .hero-section .hero-content .facts {
     gap: 30px;
-    margin-top: 0;
+    margin-top: 10px;
   }
   .hero-section .hero-content .go-to-project-btn {
     position: absolute;
@@ -868,13 +868,13 @@
   }
   .hero-text {
     margin-bottom: 0;
-    max-width: none;
+    max-width: 22rem;
     font-size: 4vw;
     line-height: 1.6;
   }
   .hero-content {
     /* padding: 0; */
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 60px;
   }
   .hero-section .hero-content h1 {
@@ -928,7 +928,7 @@
     margin-right: 0;
     /* width: 75px;
     height: 75px; */
-    margin-top: -10vh;
+    margin-top: -8vh;
   }
   .hero-section .hero-content .go-to-project-btn i {
     /* width: 60% !important; */
@@ -939,6 +939,7 @@
   }
   .hero-section .hero-content .facts p {
     font-size: 10px;
+    line-height: 16px;
   }
   .hero-section .hero-content br {
     display: none;
