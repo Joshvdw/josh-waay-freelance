@@ -553,7 +553,7 @@
     padding: 0;
   }
   .custom-container {
-    padding: 70px 30px;
+    padding: 60px 30px;
   }
   .is-video {
     top: unset;
@@ -563,6 +563,8 @@
     margin-top: 10px;
     color: #ffffff;
     cursor: pointer;
+    background: var(--primary_color-dull);
+    box-shadow: 0 0 30px 10px rgba(160, 23, 3, 0.2);
   }
   .clients-logos .col-md-3 {
     min-height: 7rem;
@@ -679,6 +681,12 @@
   .section-header h1 span {
     opacity: 1;
   }
+  .body {
+    background-color: #141414;
+  }
+  #black-mobile-overlay {
+    background-color: #c1a2a6;
+  }
   .section-header h1 br {
     display: block;
   }
@@ -706,6 +714,7 @@
   /*}*/
   .hero-section .hero-content .facts {
     gap: 50px;
+    margin-top: 0;
   }
   .texture-cover {
     background-blend-mode: normal;
@@ -713,7 +722,7 @@
     filter: brightness(0.2);
   }
   .hero-container {
-    gap: 3vw;
+    gap: 0;
   }
   .resume-area .resume-content .resume-timeline .item {
     padding-left: 50px;
@@ -888,7 +897,7 @@
     font-size: 8.9vw;
   }
   .copyright {
-    font-size: 3.2vw !important;
+    font-size: 2.9vw !important;
   }
   .left-sidebar .social-profile li a {
     width: max(35px, 11vw); /* Ensures at least 35px */
@@ -919,7 +928,7 @@
     margin-right: 0;
     /* width: 75px;
     height: 75px; */
-    margin-top: -160px;
+    /* margin-top: -160px; */
   }
   .hero-section .hero-content .go-to-project-btn i {
     /* width: 60% !important; */
@@ -977,13 +986,13 @@
   }
   .hero-container {
     /* justify-content: space-between; */
-    gap: 15vw;
+    /* gap: 15vw; */
   }
   .portfolio-area {
     padding: 0;
   }
   .custom-container {
-    padding: 70px 15px;
+    padding: 60px 15px;
   }
   .facts-outer {
     margin-bottom: 50px;
