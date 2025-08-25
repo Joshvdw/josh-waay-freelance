@@ -1277,7 +1277,7 @@ main.drake-main {
 
 .hero-section .hero-content .facts {
   gap: 50px;
-  margin-top: 125px;
+  margin-top: 8vh;
 }
 .hero-section .hero-content .facts h2 {
   font-size: 72px;
