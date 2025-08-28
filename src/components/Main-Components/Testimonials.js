@@ -93,6 +93,30 @@ export default function Testimonials() {
               <div className="testimonial-item">
                 <div className="testimonial-item-inner">
                   <p>
+                    We wanted a website that was both simple and stand-out, to
+                    give viewers a small taste of our current video game project
+                    right there in the browser. Josh took our original concept
+                    and fed back into it with many great ideas and improvements,
+                    and was able to pull off a performant website that
+                    accurately matched the animation and interactivity of the
+                    game. Josh makes custom websites that clearly stand out from
+                    the crowd, which is exactly what we needed.
+                  </p>
+                  <div className="author d-flex align-items-center">
+                    <img src="../assets/images/ben.jpeg" alt="portfolio" />
+                    <div className="right">
+                      <h3>Ben Childs</h3>
+                      <p className="designation">
+                        <span>Cassbay Games</span>
+                      </p>
+                    </div>
+                  </div>
+                  {/*<a href="" className="project-btn">Project</a>*/}
+                </div>
+              </div>
+              <div className="testimonial-item">
+                <div className="testimonial-item-inner">
+                  <p>
                     Josh is a highly skilled developer with particular strength
                     in custom JavaScript, which we’ve utilised time and time
                     again across numerous Webflow projects here at the studio.
@@ -138,31 +162,6 @@ export default function Testimonials() {
                       <h3>Maria Rose</h3>
                       <p className="designation">
                         <span>ULTRAVIOLET</span>
-                      </p>
-                    </div>
-                  </div>
-                  {/*<a href="" className="project-btn">Project</a>*/}
-                </div>
-              </div>
-
-              <div className="testimonial-item">
-                <div className="testimonial-item-inner">
-                  <p>
-                    We wanted a website that was both simple and stand-out, and
-                    to give viewers a small taste of our current video game
-                    project right there in the browser. Josh took our original
-                    concept and fed back into it with many great ideas and
-                    improvements, and was able to pull off a performant website
-                    that accurately matched the animation and interactivity of
-                    the game. Josh makes custom websites that clearly stand out
-                    from the crowd, which is exactly what we needed.
-                  </p>
-                  <div className="author d-flex align-items-center">
-                    <img src="../assets/images/ben.jpeg" alt="portfolio" />
-                    <div className="right">
-                      <h3>Ben Childs</h3>
-                      <p className="designation">
-                        <span>Cassbay Games</span>
                       </p>
                     </div>
                   </div>

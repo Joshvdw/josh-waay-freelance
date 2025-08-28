@@ -1,7 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Lsb() {
   const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = "./assets/images/full-pic-red.png";
+    img.onload = () => setLoaded(true);
+  }, []);
+
   return (
     <div className="lsb-outer">
       <div
@@ -11,7 +18,8 @@ export default function Lsb() {
           <img
             className={"me"}
             src="./assets/images/full-pic-red.png"
-            alt="Me"
+            alt="Josh Waay Bio"
+            loading="eager"
             onLoad={() => setLoaded(true)}
           />
           <div>
