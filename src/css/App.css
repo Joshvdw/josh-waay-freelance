@@ -2865,3 +2865,6 @@ body .body-overlay.loaded {
     box-shadow: 0 0 30px 10px rgba(160, 23, 3, 0.15);
   }
 }
+.hideDesktop {
+  display: none !important;
+}

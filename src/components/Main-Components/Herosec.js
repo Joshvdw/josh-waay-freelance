@@ -52,7 +52,7 @@ export default function Herosec() {
             <div className="hero-inner">
               <div className="section-header">
                 <h1 className="scroll-animation" data-aos="fade-up">
-                  Unlock your full{""}
+                  Unlock your<br className="hideDesktop"/> full{""}
                   <br /> Digital Potential with <span></span>
                   <br></br>
                   <span>Custom Web Solutions</span>
