@@ -34,13 +34,8 @@ export default function Rsidemenu() {
                 </a>
               </li>
               <li>
-                <a
-                  className="scroll-to"
-                  href="#portfolio"
-                  onClick={removeActive}
-                >
-                  <i className="las la-grip-vertical"></i>{" "}
-                  <span>Portfolio</span>
+                <a className="scroll-to" href="#about" onClick={removeActive}>
+                  <i class="las la-address-card"></i> <span>About</span>
                 </a>
               </li>
               <li>
@@ -95,7 +90,7 @@ export default function Rsidemenu() {
             <p>Links</p>
             <ul className="social-links d-flex align-items-center">
               <li>
-                <a href="https://portfolio.joshwaay.dev/" target={"_blank"}>
+                <a href="https://joshwaay.dev/" target={"_blank"}>
                   <i className="las la-briefcase"></i>
                 </a>
               </li>

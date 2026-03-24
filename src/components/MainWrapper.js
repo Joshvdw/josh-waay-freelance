@@ -1,15 +1,15 @@
 import React from "react";
 import Lsb from "./Global-content/Lsb";
 import Herosec from "./Main-Components/Herosec";
-// import About from './Main-Components/About'
-// import Resume from './Main-Components/Resume'
+import About from "./Main-Components/About";
 import Service from "./Main-Components/Service";
-// import Skills from './Main-Components/Skills'
 import Portfolio from "./Main-Components/Portfolio";
 import Testimonials from "./Main-Components/Testimonials";
 import Clientlogos from "./Main-Components/Clientlogos";
-// import Pricing from './Main-Components/Pricing'
 import Contact from "./Main-Components/Contact";
+// import Skills from './Main-Components/Skills'
+// import Pricing from './Main-Components/Pricing'
+// import Resume from './Main-Components/Resume'
 
 export default function Main() {
   return (
@@ -18,15 +18,15 @@ export default function Main() {
         <div id="smooth-content">
           <Herosec />
           <Lsb /> {/* this component will used by mobile devices */}
-          <Portfolio />
+          <About />
           <Service />
-          {/*<Resume/>*/}
-          {/*<Skills/>*/}
-          {/*<About/>*/}
+          {/* <Portfolio /> */}
           <Testimonials />
           <Clientlogos />
-          {/*<Pricing/>*/}
           <Contact />
+          {/*<Pricing/>*/}
+          {/*<Resume/>*/}
+          {/*<Skills/>*/}
         </div>
       </div>
     </main>

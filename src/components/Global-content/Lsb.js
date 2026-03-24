@@ -33,12 +33,14 @@ export default function Lsb() {
             {/*</div>*/}
             {/*</div>*/}
             <p className="copyright">
-              © Josh Waay Dev | Amsterdam, nl
-              <br /> KVK 97972738 | BTW NL005300610B56
+              <i>
+                © Josh Waay Dev | New Zealand
+                <br /> Working Worldwide Remotely
+              </i>
             </p>
             <ul className="social-profile d-flex align-items-center flex-wrap justify-content-center">
               <li>
-                <a href="https://portfolio.joshwaay.dev/" target={"_blank"}>
+                <a href="https://joshwaay.dev/" target={"_blank"}>
                   <i className="las la-briefcase"></i>
                 </a>
               </li>

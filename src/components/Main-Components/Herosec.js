@@ -18,7 +18,7 @@ export default function Herosec() {
           duration: 6000,
           iterations: Infinity,
           easing: "linear",
-        }
+        },
       );
     }
 
@@ -52,7 +52,8 @@ export default function Herosec() {
             <div className="hero-inner">
               <div className="section-header">
                 <h1 className="scroll-animation" data-aos="fade-up">
-                  Unlock your<br className="hideDesktop"/> full{""}
+                  Unlock your
+                  <br className="hideDesktop" /> full{""}
                   <br /> Digital Potential with <span></span>
                   <br></br>
                   <span>Custom Web Solutions</span>
@@ -86,7 +87,7 @@ export default function Herosec() {
                   </p>
                 </div>
               </div>
-              <a
+              {/* <a
                 href="#portfolio"
                 className="go-to-project-btn scroll-to scroll-animation"
                 data-aos="fade-up"
@@ -100,7 +101,7 @@ export default function Herosec() {
                   style={{ display: "block", width: "80%" }}
                 />
                 <i className="las la-arrow-down"></i>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

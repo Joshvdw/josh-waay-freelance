@@ -13,8 +13,8 @@ export default function Scrollnav() {
         </a>
       </li>
       <li>
-        <a className="scroll-to" href="#portfolio">
-          <span>Portfolio</span> <i className="las la-grip-vertical"></i>
+        <a className="scroll-to" href="#about">
+          <span>About</span> <i class="las la-address-card"></i>
         </a>
       </li>
       <li>

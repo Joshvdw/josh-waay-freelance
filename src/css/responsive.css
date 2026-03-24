@@ -242,6 +242,9 @@
 }
 
 @media (max-width: 767px) {
+  .bio-pic {
+    margin-bottom: -10rem;
+  }
   .code {
     background-image: url("code-bg-mobile.webp");
     background-position: right top;
@@ -661,6 +664,12 @@
   }
   .lsb-outer {
     margin: 30px 15px 0px 15px;
+  }
+  .bio-pic {
+    margin-bottom: -5rem;
+  }
+  .about-content h1 {
+    font-size: 7.5vw !important;
   }
   .custom-container {
     /* padding: 0 15px; */

@@ -175,7 +175,9 @@ ul {
   display: block;
   /*border: 1px solid var(--border_color);*/
   /* box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.2); */
-  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  transition:
+    opacity 0.25s ease-out,
+    transform 0.25s ease-out;
   /*box-shadow: 0 0 30px 10px rgba(160, 23, 3, 0.15);*/
   /**/
   /* border-radius: 15px; */
@@ -217,7 +219,9 @@ ul {
   transform: translate(-50%, -50%);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease-in-out, transform 1s ease-in-out !important;
+  transition:
+    opacity 0.2s ease-in-out,
+    transform 1s ease-in-out !important;
 }
 
 .is-video img {
@@ -483,7 +487,9 @@ main.drake-main {
   z-index: 20;
   opacity: 0;
   transform: translateY(-50%) translateX(80%);
-  transition: opacity 0.9s ease-in-out, transform 0.7s ease-in-out;
+  transition:
+    opacity 0.9s ease-in-out,
+    transform 0.7s ease-in-out;
 }
 .menu::before {
   content: "";
@@ -1009,7 +1015,9 @@ main.drake-main {
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   transform: translateY(-50%) translateX(-40%);
-  transition: opacity 0.9s ease-in-out, transform 0.7s ease-in-out;
+  transition:
+    opacity 0.9s ease-in-out,
+    transform 0.7s ease-in-out;
   overflow: hidden;
 }
 .texture-cover {
@@ -1076,7 +1084,7 @@ main.drake-main {
   margin-bottom: 0px !important;
   opacity: 0.8;
   font-family: var(--tech_font);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .left-sidebar .social-profile {
   gap: 8px;
@@ -1364,7 +1372,9 @@ main.drake-main {
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.35);
   opacity: 0;
   transform: translateX(80%);
-  transition: opacity 0.9s ease-in-out, transform 0.7s ease-in-out;
+  transition:
+    opacity 0.9s ease-in-out,
+    transform 0.7s ease-in-out;
 }
 
 .icon-menu.loaded {
@@ -1409,6 +1419,34 @@ body .body-overlay.loaded {
 .about-area .about-content p {
   line-height: 30px;
   max-width: 610px;
+}
+
+.about-text {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  line-height: 1.6 !important;
+}
+
+.bio-pic {
+  float: right;
+  width: 100%;
+  margin-bottom: -15rem;
+  filter: brightness(65%);
+  margin-right: 40px;
+}
+
+.about-content h1 {
+  font-size: 2.8rem;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+
+.about-content br {
+  display: block !important;
 }
 
 /* 11 - Resume */
